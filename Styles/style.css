@@ -1,0 +1,23 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #010e38;
+}
+
+.main{
+    width: 100px;
+    max-width: 100px;
+    margin: 0px auto;
+}
+
+.slides {
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+}
