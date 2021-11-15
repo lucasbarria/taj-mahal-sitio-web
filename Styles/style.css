@@ -1,15 +1,19 @@
 *{
-    margin:0px;
-    padding:0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background: #010e38;
+main, nav, header, footer{
+    display:block;
 }
-
-.main{
-    width: 100px;
-    max-width: 100px;
-    margin: 0px auto;
+body{
+    background-image: url(../imagenes/india.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.principal{
+	width: 1366px;
 }
