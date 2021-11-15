@@ -7,7 +7,84 @@
     <title>Contacto</title>
 </head>
 <body>
-    <h1>Contactanos</h1>
+    <header id="encabezado">
+        <nav class="navegacion">
+            <ul>
+                <li><a href ="index.html">Inicio</a></li>
+                <li><a href ="turismo.html">Turismo</a></li>
+                <li><a href ="info.html">Información</a></li>
+                <li><a href ="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Reserva tu tour</h1>
+    <form action="">
+        <div class="info">
+            <label for="nombre">ingrese nombre y apellido</label>
+            <input type="text" name="nombre" placeholder="Nombre y Apellido">
+        </div>
 
+        <div class="info">
+            <label for="num">ingrese numero de telefono</label>
+            <input type="tel" name="num" placeholder="Ej: 2901456832">
+        </div>
+
+        <div class="info">
+            <label for="email">ingrese su email</label>
+            <input type="email" name="email" placeholder="Email">
+    
+        </div>
+
+        <div class="info">
+            <label for="excursion">Elija que excursiones quiere hacer</label>
+            <select name="excursion" id="excursion">
+                <option value="">Fatehpur Sikri</option>
+                <option value="">Mathura</option>
+                <option value="">Bateshwar</option>
+                <option value="">Santuario de Chambal</option>
+                <option value="">Santuario de aves de Keetham</option>
+            </select>
+        </div>
+
+        <div class="info">
+            <p>quiere que la excursion sea guiada?</p>
+            <label for="guiada?">si</label>
+            <input type="radio" name="guiada?" id="guia-si">
+            <label for="guiada?">no</label>
+            <input type="radio" name="guiada?" id="guia-no">
+        </div>
+
+        <div class="info">
+            <label for="fecha">ingrese el dia</label>
+        <input type="date" name="date" id="date">
+        </div>
+
+        <div class="info">
+            <p>elija un horario</p>
+        <select name="horarios" id="horarios">
+            <option value="">10:00</option>
+            <option value="">12:00</option>
+            <option value="">14:00</option>
+            <option value="">16:00</option>
+            <option value="">18:00</option>
+        </select>
+        </div>
+        
+        <div class="info">
+            <label for="personas">ingrese el numero de personas</label>
+        <input type="number" name="personas" id="" placeholder="numero de personas">
+        </div>
+
+        <input type="submit" value="Reservar">
+    </form>
+    <section>
+        <h3>nota-</h3>
+        <ol>
+            <li>Taj Mahal cierra todos los viernes.</li>
+            <li>Se recomienda a los turistas que permanezcan dentro del monumento según las instrucciones mencionadas en los boletos o emitidas por las autoridades de ASI.</li>
+            <li>El turista debe llevar su comprobante de identidad emitido por el gobierno. Autoridades.</li>
+            <li>Se permite botella de agua dentro del monumento. Los servicios de cubrezapatos, botella de agua, mapa de la guía turística de Agra, autobús de batería y carrito de golf se proporcionan sin costo con el boleto de entrada del extranjero al Taj.</li>
+        </ol>
+    </section>
 </body>
 </html>
