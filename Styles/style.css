@@ -8,18 +8,24 @@
 } */
 body{
     background-image: url(../imagenes/india.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-repeat: no-repeat;   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-header{
+.contenido{
     width: 1024px;
-    /* border: 1px solid black; */
+}
+
+/* HEADER */
+#encabezado{
+    width: 1024px;
+    margin: 0;
+}
+header{
+    width: 1366px;
+    height: 540px;
 }
 .navegacion{
     width: 100%;
@@ -40,22 +46,112 @@ header{
     color: black;
 }
 .navegacion ul li a:hover{
-    text-decoration: underline red;
+    text-decoration: underline #f9af38;
 }
 h1{
     font-size: 120px;
     font-family: 'Petemoss', cursive;
     position: relative;
-    left: 250px;
+    left: 150px;
     right: 0px;
     top: 30px;
     bottom: 0;
 }
-#encabezado{
-    width: 1024px;
-    margin: o;
+
+/* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #introduccion{
-   margin-top: 200px;
-   padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    padding: 15px;
+    box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+}
+.mogol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.mogol div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    flex-direction: column;
+    margin: 30px;
+}
+.mogol div ul{
+    padding-left: 50px;
+}
+
+.visitarIndia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8f8270;
+    width: 1000px;
+    border-radius: 100px;
+    padding: 30px;
+}
+.visitarIndia div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    width: 800px;
+}
+.visitarIndia div p{
+    padding: 0px 20px;
+}
+.visitarIndia div img{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 10px;
+}
+.acerca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 40px 0 40px;
+}
+.p{
+    width: 150px;
+}
+
+/* FOOTER */
+footer{
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+footer div{
+    margin: 30px;
+}
+footer div ul li{
+    list-style: none;
+    padding-left: 10px;
 }

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* header{
+    width: 1024px;
+} */
+.contenido{
+    width: 1024px;
+}
+.navegacion{
+    width: 100%;
+}
+.navegacion ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.navegacion ul li{
+    padding-right: 20px;
+    list-style: none;
+}
+.navegacion ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navegacion ul li a:hover{
+    text-decoration: underline red;
+}
+main{
+    
+}
