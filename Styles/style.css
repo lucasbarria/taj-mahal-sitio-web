@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-main, nav, header, footer{
+/* main, nav, header, footer{
     display:block;
-}
+} */
 body{
     background-image: url(../imagenes/india.jpg);
     background-attachment: fixed;
@@ -14,6 +14,37 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.principal{
-	width: 1366px;
+header{
+    width: 1024px;
+    /* border: 1px solid black; */
+}
+.navegacion{
+    width: 100%;
+}
+.navegacion ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.navegacion ul li{
+    padding-right: 20px;
+    list-style: none;
+}
+.navegacion ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navegacion ul li a:hover{
+    text-decoration: underline red;
+}
+h1{
+    font-size: 100px;
+    font-family: 'Petemoss', cursive;
+    position: relative;
+    left: 120px;
+    right: 0px;
+    top: 30px;
+    bottom: 0;
 }
