@@ -52,10 +52,10 @@ h1{
     font-size: 120px;
     font-family: 'Petemoss', cursive;
     position: relative;
-    left: 150px;
+    left: 50px;
     right: 0px;
-    top: 30px;
-    bottom: 0;
+    top: 10px;
+    bottom: 40;
 }
 
 /* MAIN */
@@ -132,10 +132,12 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 40px 40px 0 40px;
+    margin: 10px 40px 0 40px;
+    width: 190px;
 }
 .p{
     width: 150px;
+    margin-top: 5px;
 }
 
 /* FOOTER */
