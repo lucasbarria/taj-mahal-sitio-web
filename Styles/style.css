@@ -132,13 +132,14 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px 40px 0 40px;
-    width: 190px;
+    margin: 10px 5px 0 5px;
+    width: 330px;
 }
 .p{
-    width: 150px;
+    width: 250px;
     margin-top: 5px;
 }
+
 
 /* FOOTER */
 footer{
