@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Styles/style.css"/>
+        <link rel="stylesheet" href="Styles/info.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
@@ -20,22 +20,29 @@
                         <ul>
                             <li><a href ="index.html">Inicio</a></li>
                             <li><a href ="turismo.html">Turismo</a></li>
-                            <li><a href ="info.html">Información</a></li>
+                            <li id="lista" class="navegacion"><a href ="info.html">Información</a>
+                                <ul id="relative">
+                                    <li><a href="#bateshwar">Feria Bateshwar</a></li>
+                                    <li><a href="#ganado">Feria del Ganado</a></li>
+                                    <li><a href="#kailash-Fair">Kailash Fair</a></li>
+                                    <li><a href="#ram-baraat">Ram Baraat</a></li>
+                                    <li><a href="#taj-mahotsav">Taj Mahotsav</a></li>
+                                    <li><a href="#sikri">Fatehpur Sikri</a></li>
+                                </ul>
+                            </li>
                             <li><a href ="contacto.html">Contacto</a></li>
                         </ul>
                     </nav>
             </header>
     <main>
-                <h1>Todo sobre los próximos Eventos y Festividades de Agra en Uttar Pradesh</h1>
-            <div id="introduccion">
+                <h1>Todo sobre los próximos Eventos y Festividades de Agra en Uttar Pradesh, India</h1>
+
 				<p> 
 					Te contamos lo que tenes que saber de cada una de los eventos y festividades llevados a cabo en este majestuoso país. Siempre brindando seguridad y buen ambiente.
 				</p>
-			</div>
-        </div>
 
-        <div class="Feria Bateshwar">
-            <h2>Feria Bateshwar - 2021</h2>
+        <div class="centrado">
+            <h2 id="bateshwar">Feria Bateshwar - 2021</h2>
             <ul>
                 <li>Mejores días para visitar la Feria del Ganado: 29 de noviembre al 10 de diciembre de 2021</li>
                 <li>(Los mejores días para visitar la feria religiosa: 20 de diciembre al 30 de diciembre de 2021)</li>
@@ -48,8 +55,8 @@
                     Es una parte importante del circuíto de peregrinaje hindú y se lo conoce como el 'hijo de los Dhams'; debe visitarse una vez después de los cuatro Dhams considerados sagrados por los hindúes (Badrinath en el norte, Rameshwaram en el sur, Dwarka en el West y Jagannath Puri en el este).
                 </p>
             </div>
-        <div class="Feria del Ganado">
-           <h2>Feria de Ganado - Bateshwar</h2>
+        <div class="centrado">
+           <h2 id="ganado">Feria de Ganado - Bateshwar</h2>
         </div>
         <div>
             <p>
@@ -59,8 +66,8 @@
             </p>
         </div>
 
-        <div class="Kailash Fair">
-                <h2>Kailash Fair</h2>
+        <div class="centrado">
+                <h2 id="kailash-Fair">Kailash Fair</h2>
         </div>
              <div>
                  <p>
@@ -68,16 +75,16 @@
                  </p>
             </div>  
         
-        <div class="Ram Baraat">
-                <h2>Ram Baraat</h2>
+        <div class="centrado">
+                <h2 id="ram-baraat">Ram Baraat</h2>
         </div>
              <div>
                  <p>
                     Es una de las celebraciones más famosas del norte de la India. Esta celebración atrae a numerosos devotos y turistas a Agra y tiene lugar en los meses de octubre-noviembre. Según la mitología hindú, la boda del dios Rama tuvo lugar este día. Se realiza una procesión muy decorada por la ciudad con luces, flores y mucha música. Esta festividad dura tres días.
                  </p>
             </div>
-            <div class="Taj Mahotsav">
-                <h2>Taj Mahotsav</h2>
+            <div class="centrado">
+                <h2 id="taj-mahotsav">Taj Mahotsav</h2>
            </div>
              <div>
                  <p>
@@ -85,8 +92,8 @@
                  </p>
             </div>
             
-            <div class="Urs (Fatehpur Sikri)">
-                <h2>Fatehpur Sikri</h2>
+            <div class="centrado">
+                <h2 id="sikri">Fatehpur Sikri</h2>
             </div>
              <div>
                  <p>
@@ -95,5 +102,22 @@
             </div>
     </main>
 
+    <footer>
+        <div class="nosotros">
+            <div id="lucas">
+                <p class="nombre">Lucas Barria</p>
+            </div>
+        
+            <div id="aldana">
+                <p class="nombre">Aldana Ailin Fernández Gallardo</p>
+            </div>
+        </div>
+
+        <div id="datos">
+            <p class="materia">Maquetado y Desarrollo Web</p>
+            <p class="docente">Mabel García</p>
+            <p class="sitio">Este sitio es una entrega para el TP del primer cuatrimestre 2021 de la Escuela Da Vinci</p>
+        </div>
+   </footer>
 </body>
 </html>

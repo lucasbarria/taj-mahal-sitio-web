@@ -7,8 +7,8 @@
     display:block;
 } */
 body{
-    /* background-image: url(../imagenes/contacto-portada.jpg);
-    background-repeat: no-repeat; */   
+    background-image: url(../imagenes/india.jpg);
+    background-repeat: no-repeat;   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,10 @@ body{
 .contenido{
     width: 1024px;
 }
-/* HEADER */
+/* header{
+    width: 1024px;
+} */
+
 .navegacion{
     width: 100%;
 }
@@ -40,26 +43,5 @@ body{
     text-decoration: underline red;
 }
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
-}
-main form{
-    margin-top: 30px;
-}
-.nombre{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.nombre label{
-    padding-right: 50px;
-    font-family: 'Montserrat', sans-serif;
-}
-.nombre input{
-    height: 30px;
+    
 }
