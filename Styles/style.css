@@ -7,8 +7,8 @@
     display:block;
 } */
 body{
-    /* background-image: url(../imagenes/india.jpg);
-    background-repeat: no-repeat; */   
+    /* background-image: url(/imagenes/taj-mahal-portada.jpg);
+    background-repeat: no-repeat; */ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,12 +26,15 @@ body{
 header{
     width: 100%;
     height: 540px;
-    background-image: url(../imagenes/india.jpg);
+    background-image: url(/imagenes/taj-mahal-portada.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 .navegacion{
     width: 1024px;
@@ -142,6 +145,24 @@ header{
     margin: 10px 5px 0 5px;
     width: 330px;
 }
+.oferta{
+    background-image: url(/imagenes/icono.oferta.jpg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+.visa{
+    background-image: url(/imagenes/icono.visa.jpg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+.seguidor{
+    background-image: url(/imagenes/icono.seguidor.jpg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
 .p{
     width: 250px;
     margin-top: 5px;
@@ -165,9 +186,6 @@ footer div{
 footer div ul li{
     list-style: none;
     padding-left: 10px;
-}
-.soporte{
-    margin-left: 900px;
 }
 
 
@@ -199,6 +217,15 @@ main form{
 .nombre input{
     height: 30px;
 }
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+}
+.mapa iframe{
+    margin: 15px;}
 
 /* INFO */
 /* HEADER-INFO */
@@ -266,3 +293,7 @@ main form{
     flex-direction: column;
     margin: 30px;
 }
+.sitios-turismo div img{
+    overflow: hidden;
+}
+
