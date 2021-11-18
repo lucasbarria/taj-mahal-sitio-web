@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title>Contacto</title>
 </head>
 <body>
@@ -23,31 +26,34 @@
         <main>
             <h1>Reserva tu tour</h1>
             <form action="">
-                <div class="info">
-                    <label for="nombre">ingrese nombre y apellido</label>
+                <div class="nombre">
+                    <label for="nombre">Ingrese Nombre y Apellido</label>
                     <input type="text" name="nombre" placeholder="Nombre y Apellido">
                 </div>
 
-                <div class="info">
+                <div class="num">
                     <label for="num">ingrese numero de telefono</label>
                     <input type="tel" name="num" placeholder="Ej: 2901456832">
                 </div>
 
-                <div class="info">
+                <div class="email">
                     <label for="email">ingrese su email</label>
                     <input type="email" name="email" placeholder="Email">
             
                 </div>
 
                 <div class="info">
-                    <label for="excursion">Elija que excursiones quiere hacer</label>
-                    <select name="excursion" id="excursion">
-                        <option value="">Fatehpur Sikri</option>
-                        <option value="">Mathura</option>
-                        <option value="">Bateshwar</option>
-                        <option value="">Santuario de Chambal</option>
-                        <option value="">Santuario de aves de Keetham</option>
-                    </select>
+                    <p>Elija que excursiones quiere hacer</p>
+                    <label for="excursiones">Fatehpur Sikri</label>
+                    <input type="checkbox" name="excursiones" id="">
+                    <label for="excursiones">Mathura</label>
+                    <input type="checkbox" name="excursiones" id="">
+                    <label for="excursiones">Bateshwar</label>
+                    <input type="checkbox" name="excursiones" id="">
+                    <label for="excursiones">Santuario de Chambal</label>
+                    <input type="checkbox" name="excursiones" id="">
+                    <label for="excursiones">Santuario de aves de Keetham</label>
+                    <input type="checkbox" name="excursiones" id="">
                 </div>
 
                 <div class="info">
