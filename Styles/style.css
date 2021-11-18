@@ -28,9 +28,16 @@ header{
     height: 540px;
     background-image: url(../imagenes/india.jpg);
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
 }
 .navegacion{
-    width: 100%;
+    width: 1024px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
 }
 .navegacion ul{
     display: flex;
@@ -50,19 +57,16 @@ header{
 .navegacion ul li a:hover{
     text-decoration: underline #f9af38;
 }
-h1{
+.h1-index{
     font-size: 120px;
     font-family: 'Petemoss', cursive;
     position: relative;
-    left: 50px;
-    right: 0px;
-    top: 10px;
-    bottom: 40px;
+    right: 650px;
     width: 500px;
 }
 
-/* MAIN */
-main{
+/* MAIN-INDEX*/
+.main-index{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,4 +168,101 @@ footer div ul li{
 }
 .soporte{
     margin-left: 900px;
+}
+
+
+
+
+/* CONTACTO */
+/* MAIN-CONTACTO */
+main-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+main form{
+    margin-top: 30px;
+}
+.nombre{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nombre label{
+    padding-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.nombre input{
+    height: 30px;
+}
+
+/* INFO */
+/* HEADER-INFO */
+#relative ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#relative ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing:1px;
+}  
+#relative ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+} 
+#relative ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+}  
+#relative ul ul li {
+    float:none;
+    width:150px
+}  
+#relaive ul ul a {
+    padding:10px 15px;
+}  
+#relative ul li:hover > ul {
+    display:block;
+}
+
+
+/* TURISMO */
+/* MAIN-TURISMO */
+.main-turismo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sitios-turismo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.sitios-turismo div{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
 }

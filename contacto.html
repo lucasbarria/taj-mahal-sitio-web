@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
@@ -12,7 +12,6 @@
     <title>WE LOVE INDIA</title>
 </head>
 <body>
-    <div class="contenido">
         <header id="encabezado">
             <nav class="navegacion">
                 <ul>
@@ -23,82 +22,82 @@
                 </ul>
             </nav>
         </header>
-        
-        <main>
-            <h1>Reserva tu tour</h1>
-            <form action="">
-                <div class="nombre">
-                    <label for="nombre">Ingrese Nombre y Apellido</label>
-                    <input type="text" name="nombre" placeholder="Nombre y Apellido">
-                </div>
+        <div class="contenido">  
+            <main class="main-contacto">
+                <h1>Reserva tu tour</h1>
+                <form action="">
+                    <div class="nombre">
+                        <label for="nombre">Ingrese Nombre y Apellido</label>
+                        <input type="text" name="nombre" placeholder="Nombre y Apellido">
+                    </div>
 
-                <div class="num">
-                    <label for="num">ingrese numero de telefono</label>
-                    <input type="tel" name="num" placeholder="Ej: 2901456832">
-                </div>
+                    <div class="num">
+                        <label for="num">ingrese numero de telefono</label>
+                        <input type="tel" name="num" placeholder="Ej: 2901456832">
+                    </div>
 
-                <div class="email">
-                    <label for="email">ingrese su email</label>
-                    <input type="email" name="email" placeholder="Email">
-            
-                </div>
-
-                <div class="info">
-                    <p>Elija que excursiones quiere hacer</p>
-                    <label for="excursiones">Fatehpur Sikri</label>
-                    <input type="checkbox" name="excursiones" id="">
-                    <label for="excursiones">Mathura</label>
-                    <input type="checkbox" name="excursiones" id="">
-                    <label for="excursiones">Bateshwar</label>
-                    <input type="checkbox" name="excursiones" id="">
-                    <label for="excursiones">Santuario de Chambal</label>
-                    <input type="checkbox" name="excursiones" id="">
-                    <label for="excursiones">Santuario de aves de Keetham</label>
-                    <input type="checkbox" name="excursiones" id="">
-                </div>
-
-                <div class="info">
-                    <p>Desea que la excursión sea guiada?</p>
-                    <label for="guiada?">sí</label>
-                    <input type="radio" name="guiada?" id="guia-si">
-                    <label for="guiada?">No</label>
-                    <input type="radio" name="guiada?" id="guia-no">
-                </div>
-
-                <div class="info">
-                    <label for="fecha">Ingrese el día</label>
-                <input type="date" name="date" id="date">
-                </div>
-
-                <div class="info">
-                    <p>Elija un horario</p>
-                <select name="horarios" id="horarios">
-                    <option value="">10:00</option>
-                    <option value="">12:00</option>
-                    <option value="">14:00</option>
-                    <option value="">16:00</option>
-                    <option value="">18:00</option>
-                </select>
-                </div>
+                    <div class="email">
+                        <label for="email">ingrese su email</label>
+                        <input type="email" name="email" placeholder="Email">
                 
-                <div class="info">
-                    <label for="personas">Ingrese la cantidad de personas</label>
-                <input type="number" name="personas" id="" placeholder="numero de personas">
-                </div>
+                    </div>
 
-                <input type="submit" value="Reservar">
-            </form>
+                    <div class="info">
+                        <p>Elija que excursiones quiere hacer</p>
+                        <label for="excursiones">Fatehpur Sikri</label>
+                        <input type="checkbox" name="excursiones" id="">
+                        <label for="excursiones">Mathura</label>
+                        <input type="checkbox" name="excursiones" id="">
+                        <label for="excursiones">Bateshwar</label>
+                        <input type="checkbox" name="excursiones" id="">
+                        <label for="excursiones">Santuario de Chambal</label>
+                        <input type="checkbox" name="excursiones" id="">
+                        <label for="excursiones">Santuario de aves de Keetham</label>
+                        <input type="checkbox" name="excursiones" id="">
+                    </div>
 
-            <section>
-                <h3>Nota a Tener en cuenta:</h3>
-                <ol>
-                    <li>Taj Mahal cierra todos los viernes.</li>
-                    <li>Se recomienda a los turistas que permanezcan dentro del monumento según las instrucciones mencionadas en los boletos o emitidas por las autoridades de ASI.</li>
-                    <li>El turista debe llevar su comprobante de identidad emitido por el gobierno. Autoridades.</li>
-                    <li>Se permite botella de agua dentro del monumento. Los servicios de cubrezapatos, botella de agua, mapa de la guía turística de Agra, autobús de batería y carrito de golf se proporcionan sin costo con el boleto de entrada del extranjero al Taj Mahal.</li>
-                </ol>
-            </section>
-        </main>
+                    <div class="info">
+                        <p>Desea que la excursión sea guiada?</p>
+                        <label for="guiada?">sí</label>
+                        <input type="radio" name="guiada?" id="guia-si">
+                        <label for="guiada?">No</label>
+                        <input type="radio" name="guiada?" id="guia-no">
+                    </div>
+
+                    <div class="info">
+                        <label for="fecha">Ingrese el día</label>
+                    <input type="date" name="date" id="date">
+                    </div>
+
+                    <div class="info">
+                        <p>Elija un horario</p>
+                    <select name="horarios" id="horarios">
+                        <option value="">10:00</option>
+                        <option value="">12:00</option>
+                        <option value="">14:00</option>
+                        <option value="">16:00</option>
+                        <option value="">18:00</option>
+                    </select>
+                    </div>
+                    
+                    <div class="info">
+                        <label for="personas">Ingrese la cantidad de personas</label>
+                    <input type="number" name="personas" id="" placeholder="numero de personas">
+                    </div>
+
+                    <input type="submit" value="Reservar">
+                </form>
+
+                <section>
+                    <h3>Nota a Tener en cuenta:</h3>
+                    <ol>
+                        <li>Taj Mahal cierra todos los viernes.</li>
+                        <li>Se recomienda a los turistas que permanezcan dentro del monumento según las instrucciones mencionadas en los boletos o emitidas por las autoridades de ASI.</li>
+                        <li>El turista debe llevar su comprobante de identidad emitido por el gobierno. Autoridades.</li>
+                        <li>Se permite botella de agua dentro del monumento. Los servicios de cubrezapatos, botella de agua, mapa de la guía turística de Agra, autobús de batería y carrito de golf se proporcionan sin costo con el boleto de entrada del extranjero al Taj Mahal.</li>
+                    </ol>
+                </section>
+            </main>
     </div>
 
     <footer>
