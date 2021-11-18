@@ -31,6 +31,7 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    background-attachment: contain;
     flex-direction: column;
 }
 .navegacion{
@@ -135,6 +136,8 @@ header{
     margin: 20px;
 }
 .iconos{
+    background-image: url(../imagenes/icono.oferta.jpg);
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,11 +169,6 @@ footer div ul li{
     list-style: none;
     padding-left: 10px;
 }
-.soporte{
-    margin-left: 900px;
-}
-
-
 
 
 /* CONTACTO */
