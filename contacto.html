@@ -29,13 +29,13 @@
                 <form action="http://recursos.grodriguez.com.ar/FORM/" method="post" enctype="multipart/form-data">
                 <div class="form">
                     <div class="nombre">
-                        <label for="nombre">Ingrese Nombre y Apellido</label>
-                        <input type="text" name="nombre" placeholder="Nombre y Apellido" />
+                        <label for="nombre">Ingrese Nombre y Apellido*</label>
+                        <input type="text" name="nombre" placeholder="Nombre y Apellido" required/>
                     </div>
 
                     <div class="num">
-                        <label for="num">Ingrese su número de teléfono</label>
-                        <input type="tel" name="numero" placeholder="Ej: 011-555-5555"/>
+                        <label for="num">Ingrese su número de teléfono*</label>
+                        <input type="tel" name="num" placeholder="Ej: 011-555-5555" required/>
                     </div>
 
                     <div class="email">
@@ -48,19 +48,19 @@
                         <h2>Elija que excursión desea realizar</h2>
                         <div class="uno">
                             <label for="excursiones">Fatehpur Sikri</label>
-                            <input type="checkbox" name="excursiones" id="" />
+                            <input type="checkbox" name="excursiones" id="fate" />
                             <label for="excursiones">Taj Mahal</label>
-                            <input type="checkbox" name="excursiones" id="" />
+                            <input type="checkbox" name="excursiones" id="taj" />
                             <label for="excursiones">Mathura</label>
-                            <input type="checkbox" name="excursiones" id="" />
+                            <input type="checkbox" name="excursiones" id="mat" />
                         </div>
                         <div class="dos">
                             <label for="excursiones">Bateshwar</label>
-                            <input type="checkbox" name="excursiones" id="" />
+                            <input type="checkbox" name="excursiones" id="bat" />
                             <label for="excursiones">Santuario de Chambal</label>
-                            <input type="checkbox" name="excursiones" id="" />
+                            <input type="checkbox" name="excursiones" id="cham" />
                             <label for="excursiones">Santuario de aves de Keetham</label>
-                            <input type="checkbox" name="excursiones" id="" />
+                            <input type="checkbox" name="excursiones" id="aves" />
                         </div>
                     </div>
 
@@ -75,12 +75,12 @@
                         </div>
 
                     <div class="contenedorfecha">
-                        <label for="fecha">Ingrese el día</label>
-                    <input type="fecha" name="fecha" min="2021-11-19" max="2022-11-19" id="date"/>
+                        <label for="fecha">Ingrese el día*</label>
+                    <input type="date" name="fecha" value="1999-01-01" min="2021-11-19" max="2023-11-19" id="date" required/>
                     </div>
 
                     <div class="contenedorhorario">
-                        <h2>Elija un horario</h2>
+                        <h2>Elija un horario*</h2>
                     <select name="hora" id="hora">
                         <option value="">10:00</option>
                         <option value="">12:00</option>
@@ -91,8 +91,8 @@
                     </div>
                     
                     <div class="contenedorpersonas">
-                        <label for="personas">Ingrese la cantidad de personas</label>
-                    <input type="number" name="personas" id="cantpersonas" placeholder="numero de personas">
+                        <label for="personas">Ingrese la cantidad de personas*</label>
+                    <input type="number" name="personas" id="cantpersonas" min="1" max="10" placeholder="numero de personas" required>
                     </div>
 
                     <input type="submit" id="reservar" value="Reservar">

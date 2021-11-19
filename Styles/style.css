@@ -188,7 +188,7 @@ p{
 }
 
 
-/* FOOTER */
+/* FOOTER -----------------------------------------------------------------------------------------------------------------*/
 footer{
     background-color: black;
     width: 100%;
@@ -237,7 +237,6 @@ main form{
     justify-content: space-between;
 }
 .form input{
-    /*margin-right: 190px;*/
     height: 30px;
     width: 350px;
 	padding: 5px;
@@ -290,7 +289,7 @@ main form{
 .contenedorfecha{
     padding-bottom: 20px;
 }
-.contenedorfecha input[type="date"]{
+.contenedorfecha input[type="fecha"]{
     width: 140px;
     margin-bottom: 0;
 }
@@ -371,11 +370,7 @@ section ol li{
 #relative ul li:hover > ul {
     display:block;
 }
-.main-info ul #cuadrado{
-    list-style-type: square;
-    cursor: pointer;
-    padding: 5px;
-}
+
 
 
 /* TURISMO ----------------------------------------------------------------------------------*/
@@ -409,7 +404,6 @@ section ol li{
     padding-top: 25px;
     padding-bottom: 6px;
 }
-
 
 #ofertas,
 .visa,
