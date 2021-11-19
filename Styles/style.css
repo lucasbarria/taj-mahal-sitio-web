@@ -23,16 +23,29 @@ body{
     width: 1024px;
     margin: 0;
 } */
+
+/*--Header--------------------------------------------------------------------------------------------------------*/
 header{
     width: 100%;
     height: 540px;
-    background-image: url(../imagenes/india.jpg);
+    background-image: url(../imagenes/portada2.jpg);
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     background-attachment: contain;
     flex-direction: column;
+}
+#encabezado .dropdown{
+    background: white;
+    border-radius: 5px;
+}
+#encabezado .dropdown li a{
+    color: black;
+}
+#encabezado .dropdown li a:hover{
+    color: white;
+    background-color: black;
 }
 .navegacion{
     width: 1024px;
@@ -58,12 +71,46 @@ header{
 .navegacion ul li a:hover{
     text-decoration: underline #f9af38;
 }
+
+
+/*---Titulo-----------------------------------------------------------------------------------------------------------*/
 .h1-index{
     font-size: 120px;
     font-family: 'Petemoss', cursive;
     position: relative;
     right: 650px;
     width: 500px;
+}
+h1,
+h2,
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px ;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 20px;
+}
+h2{
+    font-size: 22px ;
+}
+h3{
+    font-size: 18px ;
+    padding-bottom: 10px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px ;
+    font-weight: 400;
+    color: black;
+}
+.main-contacto h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: slategray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* MAIN-INDEX*/
@@ -135,16 +182,6 @@ header{
     flex-direction: row;
     margin: 20px;
 }
-.iconos{
-    background-image: url(../imagenes/icono.oferta.jpg);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px 5px 0 5px;
-    width: 330px;
-}
 .p{
     width: 250px;
     margin-top: 5px;
@@ -155,11 +192,13 @@ header{
 footer{
     background-color: black;
     width: 100%;
-    color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
+}
+footer p{
+    color: white;
 }
 footer div{
     margin: 30px;
@@ -171,34 +210,128 @@ footer div ul li{
 }
 
 
-/* CONTACTO */
+/* CONTACTO-------------------------------------------------------------------------------------------------------------------- */
+
 /* MAIN-CONTACTO */
 main-contacto{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
-}
-main form{
     margin-top: 30px;
 }
-.nombre{
-    margin: 20px;
+main form{
+    margin-top: 20px;
+    border: 1px solid #737373;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form .nombre,
+.form .num,
+.form .email{
+    margin: 20px 160px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
 }
-.nombre label{
-    padding-right: 50px;
-    font-family: 'Montserrat', sans-serif;
-}
-.nombre input{
+.form input{
+    /*margin-right: 190px;*/
     height: 30px;
+    width: 350px;
+	padding: 5px;
+	margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #737373;
+}
+.form label{
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.form .info h2{
+    text-align: center;
 }
 
-/* INFO */
+/*--Seccion de checkbox*/
+.info input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    margin-right: 50px;
+    margin-bottom: 0;
+}
+.info .uno{
+    padding-bottom: 15px;
+    text-align: center;
+}
+.info .dos{
+    padding-bottom: 40px;
+    text-align: center;
+}
+.info .tres{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.info input[type="radio"]{
+    width: 18px;
+    height: 18px;
+    margin-right: 50px;
+}
+
+.info label[for="excursiones"],
+.info label[for="guiada?"]{
+    padding: 0 5px 0 0;
+}
+.contenedorfecha,
+.contenedorhorario h2{
+    text-align: center;
+}
+.contenedorfecha{
+    padding-bottom: 20px;
+}
+.contenedorfecha input[type="date"]{
+    width: 140px;
+    margin-bottom: 0;
+}
+.contenedorhorario{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contenedorhorario select{
+    padding: 5px;
+}
+.contenedorpersonas{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.contenedorpersonas input[type="number"]{
+    width: 150px;
+}
+input[value="Reservar"]{
+    background-color: slategray;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    height: 45px;
+    width: 140px;
+    border: none;
+    cursor: pointer;
+}
+input[value="Reservar"]:hover{
+    background-color: black;
+}
+section ol{
+    padding: 0 15px 40px 15px;
+}
+section ol li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px ;
+    font-weight: 400;
+    color: black;
+}
+
+/* INFO ----------------------------------------------------------------------------------*/
 /* HEADER-INFO */
 #relative ul {
     list-style:none;
@@ -238,9 +371,14 @@ main form{
 #relative ul li:hover > ul {
     display:block;
 }
+.main-info ul #cuadrado{
+    list-style-type: square;
+    cursor: pointer;
+    padding: 5px;
+}
 
 
-/* TURISMO */
+/* TURISMO ----------------------------------------------------------------------------------*/
 /* MAIN-TURISMO */
 .main-turismo{
     display: flex;
@@ -263,4 +401,22 @@ main form{
     align-items: center;
     flex-direction: column;
     margin: 30px;
+}
+.contenido{
+    padding-bottom: 50px;
+}
+.contenido h2{
+    padding-top: 25px;
+    padding-bottom: 6px;
+}
+
+
+#ofertas,
+.visa,
+.seguinos{
+    box-shadow: 0px 0px 5px #0000002e;
+    border-radius: 5px;
+    padding: 20px;
+    height: 180px;
+    margin: 20px;
 }
