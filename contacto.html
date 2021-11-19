@@ -22,8 +22,10 @@
                 </ul>
             </nav>
         </header>
+
         <div class="contenido">  
             <main class="main-contacto">
+<<<<<<< HEAD
                 <h1>Reserva tu tour</h1>
                 <form action="http://recursos.grodriguez.com.ar/FORM/" method="POST">
                     <div class="nombre">
@@ -39,24 +41,49 @@
                     <div class="email">
                         <label for="email">ingrese su email</label>
                         <input type="email" name="email" placeholder="Email" required>
+=======
+                <h1 id= "main-titulo">Reservá tu Tour</h1>
+                <form action="http://recursos.grodriguez.com.ar/FORM/" method="post" enctype="multipart/form-data">
+                <div class="form">
+                    <div class="nombre">
+                        <label for="nombre">Ingrese Nombre y Apellido*</label>
+                        <input type="text" name="nombre" placeholder="Nombre y Apellido" required/>
+                    </div>
+
+                    <div class="num">
+                        <label for="num">Ingrese su número de teléfono*</label>
+                        <input type="tel" name="num" placeholder="Ej: 011-555-5555" required/>
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Ingrese su email</label>
+                        <input type="email" name="email" placeholder="Email" />
+>>>>>>> 3488c9a7c11318dfc3acab458c688c2b61edb08e
                 
                     </div>
 
                     <div class="info">
-                        <p>Elija que excursiones quiere hacer</p>
-                        <label for="excursiones">Fatehpur Sikri</label>
-                        <input type="checkbox" name="excursiones" id="">
-                        <label for="excursiones">Mathura</label>
-                        <input type="checkbox" name="excursiones" id="">
-                        <label for="excursiones">Bateshwar</label>
-                        <input type="checkbox" name="excursiones" id="">
-                        <label for="excursiones">Santuario de Chambal</label>
-                        <input type="checkbox" name="excursiones" id="">
-                        <label for="excursiones">Santuario de aves de Keetham</label>
-                        <input type="checkbox" name="excursiones" id="">
+                        <h2>Elija que excursión desea realizar</h2>
+                        <div class="uno">
+                            <label for="excursiones">Fatehpur Sikri</label>
+                            <input type="checkbox" name="excursiones" id="fate" />
+                            <label for="excursiones">Taj Mahal</label>
+                            <input type="checkbox" name="excursiones" id="taj" />
+                            <label for="excursiones">Mathura</label>
+                            <input type="checkbox" name="excursiones" id="mat" />
+                        </div>
+                        <div class="dos">
+                            <label for="excursiones">Bateshwar</label>
+                            <input type="checkbox" name="excursiones" id="bat" />
+                            <label for="excursiones">Santuario de Chambal</label>
+                            <input type="checkbox" name="excursiones" id="cham" />
+                            <label for="excursiones">Santuario de aves de Keetham</label>
+                            <input type="checkbox" name="excursiones" id="aves" />
+                        </div>
                     </div>
 
                     <div class="info">
+<<<<<<< HEAD
                         <p>Desea que la excursión sea guiada?</p>
                         <label for="guiada?">sí</label>
                         <input type="radio" name="guiada?" id="guia-si" required>
@@ -83,9 +110,40 @@
                     <div class="info">
                         <label for="personas">Ingrese la cantidad de personas</label>
                         <input type="number" name="personas" id="" placeholder="numero de personas" required>
+=======
+                        <h2>¿Desea que la excursión sea guiada?</h2>
+                        <div class="tres">
+                            <label for="guiada?">Sí</label>
+                            <input type="radio" name="guiada?" id="guia-si">
+                            <label for="guiada?">No</label>
+                            <input type="radio" name="guiada?" id="guia-no">
+                        </div>
+                        </div>
+
+                    <div class="contenedorfecha">
+                        <label for="fecha">Ingrese el día*</label>
+                    <input type="date" name="fecha" value="1999-01-01" min="2021-11-19" max="2023-11-19" id="date" required/>
                     </div>
 
-                    <input type="submit" value="Reservar">
+                    <div class="contenedorhorario">
+                        <h2>Elija un horario*</h2>
+                    <select name="hora" id="hora">
+                        <option value="">10:00</option>
+                        <option value="">12:00</option>
+                        <option value="">14:00</option>
+                        <option value="">16:00</option>
+                        <option value="">18:00</option>
+                    </select>
+                    </div>
+                    
+                    <div class="contenedorpersonas">
+                        <label for="personas">Ingrese la cantidad de personas*</label>
+                    <input type="number" name="personas" id="cantpersonas" min="1" max="10" placeholder="numero de personas" required>
+>>>>>>> 3488c9a7c11318dfc3acab458c688c2b61edb08e
+                    </div>
+
+                    <input type="submit" id="reservar" value="Reservar">
+                </div>
                 </form>
 
                 <section>
@@ -97,10 +155,16 @@
                         <li>Se permite botella de agua dentro del monumento. Los servicios de cubrezapatos, botella de agua, mapa de la guía turística de Agra, autobús de batería y carrito de golf se proporcionan sin costo con el boleto de entrada del extranjero al Taj Mahal.</li>
                     </ol>
                 </section>
+<<<<<<< HEAD
                 <div class="mapa">
                     <h1>Podes encontrar nuestra agenia Aqui!</h1>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10186.51822802736!2d78.03874244895978!3d27.161184535144624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39743fd96899c287%3A0xcaf0de5d150bed06!2sTravel%20Bureau!5e0!3m2!1ses!2sar!4v1637258938357!5m2!1ses!2sar" width="600" height="450" style="border:0;" loading="lazy"></iframe>
                 </div>
+=======
+
+                <h3>Te dejamos nuestra ubicación, sitio web y teléfonos de contacto:</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10186.51822802736!2d78.03874244895978!3d27.161184535144624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39743fd96899c287%3A0xcaf0de5d150bed06!2sTravel%20Bureau!5e0!3m2!1ses!2sar!4v1637258938357!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+>>>>>>> 3488c9a7c11318dfc3acab458c688c2b61edb08e
             </main>
     </div>
 
