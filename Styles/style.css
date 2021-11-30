@@ -59,19 +59,28 @@ header{
     align-items: center;
     flex-direction: row;
     margin-top: 15px;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
 .navegacion ul li{
     padding-right: 20px;
     list-style: none;
+    position: relative;
+    float:left;
+    margin:0;
+    padding:0;
 }
 .navegacion ul li a{
+    display: block;
     text-decoration: none;
     color: black;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing:1px;
 }
-.navegacion ul li a:hover{
-    text-decoration: underline #f9af38;
-}
-
 
 /*---Titulo-----------------------------------------------------------------------------------------------------------*/
 .h1-index{
@@ -103,15 +112,6 @@ p{
     font-weight: 400;
     color: black;
 }
-.main-contacto h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: slategray;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 /* MAIN-INDEX*/
 .main-index{
@@ -119,6 +119,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 20px;
 }
 #introduccion{
     display: flex;
@@ -197,6 +198,16 @@ main-contacto{
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
+}
+.main-contacto h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: slategray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
 }
 main form{
     margin-top: 20px;
@@ -311,44 +322,6 @@ section ol li{
 
 /* INFO ----------AGREGAR LOS DIV CENTRADO------------------------------------------------------------------------*/
 /* HEADER-INFO */
-#relative ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-#relative ul a {
-    display:block;
-    color:#fff;
-    text-decoration:none;
-    font-weight:400;
-    font-size:15px;
-    padding:10px;
-    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing:1px;
-}  
-#relative ul li {
-    position:relative;
-    float:left;
-    margin:0;
-    padding:0;
-} 
-#relative ul ul {
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    padding:0;
-}  
-#relative ul ul li {
-    float:none;
-    width:150px
-}  
-#relative ul ul a {
-    padding:10px 15px;
-}  
-#relative ul li:hover > ul {
-    display:block;
-}
 
 
 
@@ -358,6 +331,7 @@ section ol li{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 20px;
 }
 .sitios-turismo{
     display: flex;
@@ -377,6 +351,7 @@ section ol li{
 }
 .contenido{
     padding-bottom: 50px;
+    margin: 20px;
 }
 .contenido h2{
     padding-top: 25px;
