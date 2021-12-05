@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="Styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
@@ -29,37 +29,36 @@
                 <form action="http://recursos.grodriguez.com.ar/FORM/" method="post" enctype="multipart/form-data">
                 <div class="form">
                     <div class="nombre">
-                        <label for="nombre">Ingrese Nombre y Apellido*</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required/>
+                        <span>Nombre:</span>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre" required/>
                     </div>
 
                     <div class="num">
-                        <label for="num">Ingrese su número de teléfono*</label>
-                        <input type="tel" name="num" id="num" placeholder="Ej: 011-555-5555" required/>
+                        <span>Ingrese su Teléfono:</span>
+                        <input type="tel" name="telefono" placeholder="Ej: 011-566-1111" required/>
                     </div>
 
-                    <div class="email">
-                        <label for="email">Ingrese su email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" />
+                    <div class="correo">
+                        <span>Ingrese su email:</span>
+                        <input type="email" name="email" value="anonimo@gmail.com" />
                 
                     </div>
-
                     <div class="info">
                         <h2>Elija que excursión desea realizar</h2>
                         <div class="uno">
-                            <label for="excursiones">Fatehpur Sikri</label>
+                            <span>Fatehpur Sikri</span>
                             <input type="checkbox" name="excursiones" id="fate" />
-                            <label for="excursiones">Taj Mahal</label>
+                            <span>Taj Mahal</span>
                             <input type="checkbox" name="excursiones" id="taj" />
-                            <label for="excursiones">Mathura</label>
+                            <span>Mathura</span>
                             <input type="checkbox" name="excursiones" id="mat" />
                         </div>
                         <div class="dos">
-                            <label for="excursiones">Bateshwar</label>
+                            <span>Bateshwar</span>
                             <input type="checkbox" name="excursiones" id="bat" />
-                            <label for="excursiones">Santuario de Chambal</label>
+                            <span>Santuario de Chambal</span>
                             <input type="checkbox" name="excursiones" id="cham" />
-                            <label for="excursiones">Santuario de aves de Keetham</label>
+                            <span>Santuario de aves de Keetham</span>
                             <input type="checkbox" name="excursiones" id="aves" />
                         </div>
                     </div>
@@ -67,16 +66,16 @@
                     <div class="info">
                         <h2>¿Desea que la excursión sea guiada?</h2>
                         <div class="tres">
-                            <label for="guiada-si">Sí</label>
-                            <input type="radio" name="guiada" id="guiada-si">
-                            <label for="guiada-no">No</label>
-                            <input type="radio" name="guiada" id="guiada-no">
+                            <span>Sí</span>
+                            <input type="radio" name="guiada?" id="guia-si">
+                            <span>No</span>
+                            <input type="radio" name="guiada?" id="guia-no">
                         </div>
                         </div>
 
                     <div class="contenedorfecha">
-                        <label for="fecha">Ingrese el día*</label>
-                    <input type="date" name="fecha" value="1999-01-01" min="2021-11-19" max="2023-11-19" id="fecha" required/>
+                        <span>Ingrese el día*</span>
+                    <input type="date" name="fecha" min="2021-11-30" max="2023-11-30" id="date" required/>
                     </div>
 
                     <div class="contenedorhorario">
@@ -91,11 +90,11 @@
                     </div>
                     
                     <div class="contenedorpersonas">
-                        <label for="personas">Ingrese la cantidad de personas*</label>
-                    <input type="number" name="personas" id="personas" min="1" max="10" placeholder="numero de personas" required>
+                        <span>Ingrese la cantidad de personas*</span>
+                    <input type="number" name="personas" id="cantpersonas" min="1" max="10" placeholder="numero de personas" required>
                     </div>
 
-                    <input type="submit" id="reservar" value="Reservar">
+                    <input type="submit" value="Reservar" id="reservo">
                 </div>
                 </form>
 
