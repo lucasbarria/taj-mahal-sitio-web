@@ -3,12 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* main, nav, header, footer{
-    display:block;
-} */
-body{
-    /* background-image: url(/imagenes/taj-mahal-portada.jpg);
-    background-repeat: no-repeat; */ 
+
+body{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,21 +14,11 @@ body{
     width: 1024px;
 }
 
-/* HEADER */
-/* #encabezado{
-    width: 1024px;
-    margin: 0;
-} */
-
 /*--Header--------------------------------------------------------------------------------------------------------*/
-header{
+.header-index, .header-turismo{
     width: 100%;
-    height: 540px;
-<<<<<<< HEAD
-    background-image: url(/imagenes/taj-mahal-portada.jpg);
-=======
+    height: 440px;
     background-image: url(../imagenes/portada2.jpg);
->>>>>>> 3488c9a7c11318dfc3acab458c688c2b61edb08e
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: top;
@@ -43,17 +29,9 @@ header{
     flex-direction: column;
     margin-bottom: 50px;
 }
-#encabezado .dropdown{
-    background: white;
-    border-radius: 5px;
-}
-#encabezado .dropdown li a{
-    color: black;
-}
-#encabezado .dropdown li a:hover{
-    color: white;
-    background-color: black;
-}
+/* .header-index p{
+    text-align: center;
+} */
 .navegacion{
     width: 1024px;
     display: flex;
@@ -81,11 +59,12 @@ header{
 
 
 /*---Titulo-----------------------------------------------------------------------------------------------------------*/
-.h1-index{
-    font-size: 120px;
+.h1-index, .h1-turismo{
+    font-size: 100px;
     font-family: 'Petemoss', cursive;
     position: relative;
-    right: 650px;
+    top: 20px;
+    right: 370px;
     width: 500px;
 }
 h1,
@@ -127,7 +106,27 @@ p{
     align-items: center;
     flex-direction: column;
 }
-#introduccion{
+.viaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 1000px;
+}
+.texto-azul{
+    color: blue;
+    font-size: 30px;
+    padding-left: 100px;
+}
+.viaje div{
+    margin-left: 20px;
+}
+.viaje div p{
+    font-size: 18px;
+}
+/* #introduccion{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,8 +135,8 @@ p{
     box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
     -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
     -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-}
-.mogol{
+} */
+/* .mogol{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,15 +152,15 @@ p{
 }
 .mogol div ul{
     padding-left: 50px;
-}
+} */
 
 .visitarIndia{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #8f8270;
-    width: 1000px;
+    background-color: #ececec;
+    width: 1200px;
     border-radius: 100px;
     padding: 30px;
 }
@@ -171,10 +170,11 @@ p{
     align-items: center;
     flex-direction: row;
     padding: 15px;
-    width: 800px;
+    width: 870px;
 }
 .visitarIndia div p{
     padding: 0px 20px;
+    font-size: larger;
 }
 .visitarIndia div img{
     border-bottom-left-radius: 10px;
@@ -189,38 +189,134 @@ p{
     flex-direction: row;
     margin: 20px;
 }
-<<<<<<< HEAD
-.iconos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px 5px 0 5px;
-    width: 330px;
-}
-.oferta{
-    background-image: url(/imagenes/icono.oferta.jpg);
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-}
-.visa{
-    background-image: url(/imagenes/icono.visa.jpg);
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-}
-.seguidor{
-    background-image: url(/imagenes/icono.seguidor.jpg);
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-}
-=======
->>>>>>> 3488c9a7c11318dfc3acab458c688c2b61edb08e
 .p{
     width: 250px;
     margin-top: 5px;
+}
+
+/* #ofertas,
+.visa,
+.seguinos{
+    box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    border-radius: 5px;
+    padding: 20px;
+    height: 180px;
+    margin: 20px;
+} */
+.opiniones{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: rgb(189, 189, 189);
+    padding: 30px;
+}
+.opiniones h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.puntuaciones{
+    border-right: 2px solid black;
+    width: 450px;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.calificacion{
+    margin-right: 20px;
+}
+.verde{
+    background-color: rgb(10, 221, 45);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 10px;
+    color: white;
+}
+.texto-chico{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.reseñas p{
+    font-size: 20px;
+}
+.servicios, .personal, .precio, .ubicacion{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.servicios p, .personal p, .precio p, .ubicacion p{
+    padding: 5px 0 5px;
+    font-size: 15px;
+    text-align: start;
+}
+/* .servicios p:first-child, .personal p:first-child, .ubicacion p:first-child{
+    padding-right: 360px;
+} */
+.servicios p:first-child{
+    padding-right: 363px;
+}
+.personal p:first-child{
+    padding-right: 358px;
+}
+.precio p:first-child{
+    padding-right: 320px;
+}
+.ubicacion p:first-child{
+    padding-right: 358px;
+}
+
+.div-comentarios{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+.div-comentarios p{
+    display: inline;
+}
+.foto-perfil{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+.estrellas{
+    width: 200px;
+    height: 100px;
+
+}
+.ordenarPor{
+    margin-bottom: 60px;
+}
+.ordenarPor select{
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.ordenarPor p{
+    font-size: 20px;
+}
+#escribir-opinion {
+    margin-left: 100px;
+    background-color: blue;
+    font-size: 20px;
+    height: 30px;
+    width: 150px;
+    color: white;
 }
 
 
@@ -244,10 +340,6 @@ footer div ul li{
     list-style: none;
     padding-left: 10px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 3488c9a7c11318dfc3acab458c688c2b61edb08e
 
 
 /* CONTACTO-------------------------------------------------------------------------------------------------------------------- */
@@ -381,14 +473,33 @@ section ol li{
 
 /* INFO ----------------------------------------------------------------------------------*/
 /* HEADER-INFO */
+.header-info{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 100px;
+    margin-right: 200px;
+}
 #relative ul {
     list-style:none;
     margin:0;
     padding:0;
 }
+#encabezado .dropdown{
+    background: white;
+    border-radius: 5px;
+}
+#encabezado .dropdown li a{
+    color: black;
+}
+#encabezado .dropdown li a:hover{
+    color: white;
+    background-color: black;
+}
 #relative ul a {
     display:block;
-    color:#fff;
+    color: black;
     text-decoration:none;
     font-weight:400;
     font-size:15px;
@@ -419,11 +530,27 @@ section ol li{
 #relative ul li:hover > ul {
     display:block;
 }
+.centrado{
+    box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    padding: 20px;
+    margin: 60px;
+    border-radius: 5px;
+}
+.centrado p{
+    margin-bottom: 10px;
+}
 
 
 
 /* TURISMO ----------------------------------------------------------------------------------*/
+/* HEADER-TURISMO */
+.h1-turismo{
+    right: 350px;
+}
 /* MAIN-TURISMO */
+
 .main-turismo{
     display: flex;
     align-items: center;
@@ -437,36 +564,34 @@ section ol li{
     flex-direction: row;
     width: 100%;
 }
-.sitios-turismo div{
-    width: 50%;
-    height: 500px;
+.iglesia, .jardines, .karauza, .itimad, .fuerte-rojo, .taj-mahal{
+    box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+}
+.sitios-turismo div{ 
+    /* height: 500px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px;
+    margin: 40px 40px 40px 40px;
 }
-<<<<<<< HEAD
 .sitios-turismo div img{
-    overflow: hidden;
+    margin: 20px;
 }
-
-=======
 .contenido{
     padding-bottom: 50px;
 }
 .contenido h2{
-    padding-top: 25px;
     padding-bottom: 6px;
 }
-
-#ofertas,
-.visa,
-.seguinos{
-    box-shadow: 0px 0px 5px #0000002e;
-    border-radius: 5px;
-    padding: 20px;
-    height: 180px;
-    margin: 20px;
+.button-a{
+    text-align: center;
+    width: 130px;
+    height: 30px;
+    color: black;
+    padding-top: 5px;
+    background-color: red;
+    text-decoration: none;
 }
->>>>>>> 3488c9a7c11318dfc3acab458c688c2b61edb08e
