@@ -68,6 +68,12 @@ body{
 }
 
 /*---Titulo-----------------------------------------------------------------------------------------------------------*/
+.header-index p{
+    position: relative;
+    right: 730px;
+    top: 30px;
+    font-size: 20px;
+}
 .h1-index, .h1-turismo{
     font-size: 100px;
     font-family: 'Petemoss', cursive;
@@ -289,9 +295,27 @@ p{
 .div-comentarios p{
     display: inline;
 }
+.comentarios{
+    display: flex;
+    flex-direction: row;
+}
+.comentarios div{
+    margin: 3px 0 0 10px;
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.comentarios div p{
+    margin: 5px 0 5px 0;
+}
+.comentarios div p:first-child{
+    font-size: 18px;
+}
 .foto-perfil{
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 100px;
 }
 .estrellas{
@@ -300,7 +324,7 @@ p{
 
 }
 .ordenarPor{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .ordenarPor select{
     background-color: transparent;
@@ -319,8 +343,31 @@ p{
     width: 150px;
     color: white;
 }
-
-
+.promociones{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin: 40px;
+}
+.promociones div p{
+    font-size: 22px;
+}
+.form-index{
+    margin-left: 200px;
+}
+.form-index form input{
+    height: 30px;
+    padding: 10px;
+}
+.form-index form button{
+    background-color: black;
+    color: white;
+    height: 30px;
+    border: none;
+    width: 150px;
+    margin-left: -5px;
+}
 
 /* CONTACTO-------------------------------------------------------------------------------------------------------------------- */
 
@@ -342,7 +389,7 @@ main-contacto{
     flex-direction: column;
     margin: 20px;
 }
-main form{
+.main-contacto form{
     margin-top: 20px;
     border: 1px solid #737373;
     padding: 30px;
@@ -499,7 +546,7 @@ section ol li{
     margin: 20px;
 }
 .contenido{
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     margin: 20px;
 }
 .contenido h2{
