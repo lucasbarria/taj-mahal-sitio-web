@@ -15,16 +15,16 @@ body{
 }
 
 /*--Header--------------------------------------------------------------------------------------------------------*/
-.header-index, .header-turismo{
+.header-index, .header-turismo,.header-info,.header-contacto{
     width: 100%;
     height: 440px;
-    background-image: url(../imagenes/portada2.jpg);
+    background-image: url(../imagenes/portada-home.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: top;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-start;
     background-attachment: scroll;
     flex-direction: column;
     margin-bottom: 50px;
@@ -33,38 +33,38 @@ body{
     text-align: center;
 } */
 .navegacion{
-    width: 1024px;
+    width: 1425px;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 200px;
+    justify-content: flex-start;
+    margin-top: 10px;
 }
 .navegacion ul{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: left;
     flex-direction: row;
     margin-top: 15px;
-    list-style:none;
-    margin:0;
-    padding:0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .navegacion ul li{
     padding-right: 20px;
     list-style: none;
     position: relative;
-    float:left;
-    margin:0;
-    padding:0;
+    float: left;
+    margin: 0;
+    padding: 0;
 }
 .navegacion ul li a{
     display: block;
     text-decoration: none;
     color: black;
-    font-weight:400;
-    font-size:15px;
-    padding:10px;
-    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing:1px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
 }
 
 /*---Titulo-----------------------------------------------------------------------------------------------------------*/
@@ -93,11 +93,16 @@ h3{
 }
 h2{
     font-size: 22px ;
+    padding-bottom: 15px;
+    margin: 30px;
+    text-align: center;
 }
+
 h3{
     font-size: 18px ;
     padding-bottom: 10px;
 }
+/*
 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px ;
@@ -105,14 +110,32 @@ p{
     color: black;
 }
 
-/* MAIN-INDEX*/
-.main-index{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
+.arte .parque-nacional .aire-libre{
+    position: relative;
+    display: inline-block;
+    text-align: left;
 }
+.texto-encima-uno{
+    position: relative;
+    top: 130px;
+    left: 100px;
+}
+.texto-encima-dos{
+    position: relative;
+    top: 130px;
+    left: 100%;
+}
+.texto-encima-tres{
+    position: relative;
+    left: 100%;
+}
+.texto-encima p{
+    position: relative;
+    left: 100%;
+}
+*/
+
+/* MAIN-INDEX*/
 .viaje{
     display: flex;
     justify-content: center;
@@ -189,29 +212,7 @@ p{
     border-bottom-right-radius: 100px;
     border-top-right-radius: 10px;
 }
-.acerca{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 20px;
-}
-.p{
-    width: 250px;
-    margin-top: 5px;
-}
 
-/* #ofertas,
-.visa,
-.seguinos{
-    box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    border-radius: 5px;
-    padding: 20px;
-    height: 180px;
-    margin: 20px;
-} */
 .opiniones{
     width: 1200px;
     display: flex;
@@ -314,13 +315,13 @@ p{
     font-size: 18px;
 }
 .foto-perfil{
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     border-radius: 100px;
 }
-.estrellas{
-    width: 200px;
-    height: 100px;
+.estrella{
+    width: 90px;
+    height: 20px;
 
 }
 .ordenarPor{
@@ -529,7 +530,7 @@ section ol li{
     flex-direction: row;
     width: 100%;
 }
-.iglesia, .jardines, .karauza, .itimad, .fuerte-rojo, .taj-mahal{
+.iglesia-akbar, .ram-bagh, .chini-ka, .itimad-daulah, .fuerte-rojo, .taj-mahal{
     box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
     -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
     -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
