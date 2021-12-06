@@ -11,13 +11,13 @@ body{
     flex-direction: column;
 }
 .contenido{
-    width: 1024px;
+    width: 1425px;
 }
 
 /*--Header--------------------------------------------------------------------------------------------------------*/
 .header-index, .header-turismo,.header-info,.header-contacto{
-    width: 100%;
-    height: 440px;
+    width: 1425;
+    height: 450px;
     background-image: url(../imagenes/portada-home.jpg);
     background-repeat: no-repeat;
     background-position: center;
