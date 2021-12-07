@@ -16,7 +16,7 @@ body{
 
 /*--Header--------------------------------------------------------------------------------------------------------*/
 .header-index, .header-turismo,.header-info,.header-contacto{
-    width: 100%;
+    width: 1425px;
     height: 450px;
     background-image: url(../imagenes/portada-home.jpg);
     background-repeat: no-repeat;
@@ -585,6 +585,11 @@ ul #lista:hover .dropdown{
     margin: 20px;
 }
 /* TURISMO ----------------------------------------------------------------------------------*/
+/* .header-turismo h1{
+    position: relative;
+    left: 1100px;
+    color: white;
+} */
 .main-turismo{
     display: flex;
     align-items: center;
@@ -597,15 +602,19 @@ ul #lista:hover .dropdown{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 500px;
 }
 .sitios-turismo div{ 
-    /* height: 500px; */
+    height: 500px;
+    width: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 40px 40px 40px 40px;
+}
+.sitios-turismo div p{
+    margin: 20px;
 }
 .sitios-turismo div img{
     margin: 20px;
