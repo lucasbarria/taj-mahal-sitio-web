@@ -111,35 +111,6 @@ p{
     font-weight: 400;
     color: black;
 }
-
-/*
-.opciones [.arte .parque-nacional .aire-libre]{
-    position: relative;
-    text-align: center;
-    left: 50px;
-    top: 3opx;
-    width: 1425px;
-}
-.texto-encima-uno{
-    position: relative;
-    margin: 10px;
-    left: 40px;
-}
-.texto-encima-dos{
-    position: relative;
-    top: 130px;
-    left: 100%;
-}
-.texto-encima-tres{
-    position: relative;
-    left: 100%;
-}
-.texto-encima p{
-    position: relative;
-    left: 100%;
-}
-*/
-
 /* MAIN-INDEX----------------------------------------------------------------------------*/
 .viaje{
     display: flex;
@@ -536,7 +507,7 @@ ul #lista:hover .dropdown{
     align-items: center;
     flex-direction: row;
 }
-.sitios-turismo div{ 
+.sitios-turismo div{
     /* height: 500px; */
     display: flex;
     justify-content: center;
