@@ -102,7 +102,7 @@ h2{
     padding-bottom: 10px;
     margin: 30px;
     text-align: center;
-    width: 1300px;
+    /* width: 1300px; */
 }
 
 h3{
@@ -585,11 +585,6 @@ ul #lista:hover .dropdown{
     margin: 20px;
 }
 /* TURISMO ----------------------------------------------------------------------------------*/
-/* .header-turismo h1{
-    position: relative;
-    left: 1100px;
-    color: white;
-} */
 .main-turismo{
     display: flex;
     align-items: center;
@@ -615,7 +610,7 @@ ul #lista:hover .dropdown{
 }
 .sitios-turismo div p{
     margin: 20px;
-}
+}_
 .sitios-turismo div img{
     margin: 20px;
 }
@@ -630,6 +625,20 @@ ul #lista:hover .dropdown{
 }
 .contenido h2{
     padding-bottom: 6px;
+}
+.turismo-contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(149, 149, 149);
+    height: 200px;
+    width: 900px;
+}
+.turismo-contactanos p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
 }
 
 
