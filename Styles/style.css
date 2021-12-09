@@ -15,7 +15,7 @@ body{
 }
 
 /*--Header--------------------------------------------------------------------------------------------------------*/
-.header-index, .header-turismo,.header-info,.header-contacto{
+.header-index, .header-turismo, .header-info/* .header-contacto */{
     width: 1425px;
     height: 450px;
     background-image: url(../imagenes/portada-home.jpg);
@@ -32,7 +32,7 @@ body{
 /* .header-index p{
     text-align: center;
 } */
-.navegacion{
+/* .navegacion{
     width: 1425px;
     display: flex;
     justify-content: flex-start;
@@ -66,9 +66,58 @@ body{
     padding: 10px;
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
+} */
+/* PRUEBA */
+ul, ol {
+    list-style:none;
 }
+
+.navegacion > li {
+    float:left;
+}
+
+.navegacion li a {
+    /* background-color:#000; */
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.navegacion li a:hover{
+    color: orange;
+}
+.dropdown{
+    /* background-color:#434343; */
+    background-color: rgb(129, 129, 129);
+}
+.dropdown li{
+    height: 40px;
+    margin: 5px;
+}
+.navegacion li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.navegacion li:hover > ul {
+    display:block;
+}
+
+.navegacion li ul li {
+    position:relative;
+}
+
+.navegacion li ul li ul {
+    right:-140px;
+    top:0px;
+}
+/* FIN-PRUEBA */
+
 .navegacion ul li a:hover{
-    color: coral;
+    color: orange;
 }
 /*---Titulo-----------------------------------------------------------------------------------------------------------*/
 .header-index p{
@@ -527,29 +576,6 @@ section ol li{
 
 /* INFO ----------AGREGAR LOS DIV CENTRADO------------------------------------------------------------------------*/
 /* HEADER-INFO */
-#lista{
-	position: relative;
-	display: inline-block;
-}
-.dropdown{
-	position: relative;
-	display: none;
-}
-.dropdown li{
-	margin: 0px;
-	position: absolute;
-    flex-direction: row;
-}
-.dropdown li a{
-	color: black;
-}
-.dropdown li a:hover{
-	color: red;
-    flex-direction: row;
-}
-ul #lista:hover .dropdown{
-	display: block;
-}
 #bateshwar, #FeriadeGanado, #kailash-Fair, #ram-barat,
 #taj-mahotsav, #fatehpur-sikri{
     color: blue;
