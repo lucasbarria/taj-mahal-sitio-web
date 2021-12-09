@@ -563,36 +563,40 @@ section ol li{
     margin: 0px;
 }
 .main-info h2{
-    margin: 0px;
-    padding: 10px;
+    margin: 5px;
+    padding: 0px;
     color: grey;
     width: 60%;
 }
+.eventos h3{
+    margin-top: 20px;
+    color: rgba(9, 9, 156, 0.836);
+}
 
 .eventos div{ 
-    height: 500px;
-    width: 700px;
+    height: 550px;
+    width: 650px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin: 50px 30px 40px 30px;
+    margin: 30px 60px 30px 30px;
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
 }
 .eventos div p{
-    margin: 20px;
+    margin: 30px 30px 15px 30px
 }
 .eventos div ul li{
-    color:  rgb(160, 156, 156);
+    color:  rgb(52, 41, 202);
+    margin-top: 5px;
+}
+.eventos img{
+    width: 381px;
+    height: 226px;
+    border-radius: 10PX;
 }
 
-.contenido{
-    /* padding-bottom: 50px; */
-    margin: 20px;
-}
-.contenido h2{
-    padding-bottom: 6px;
-}
+
 /* TURISMO ----------------------------------------------------------------------------------*/
 
 .akbar, .ram, .chini, .itimad, .rojo, .tajma{
@@ -600,41 +604,8 @@ section ol li{
     color: blue;
     text-align: center;
     margin: 20px;
+    border-radius: 10PX;
 }
-
-/* .main-turismo{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0px;
-}
-.sitios-turismo{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 500px;
-}
-.sitios-turismo div{ 
-    height: 500px;
-    width: 700px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 15px 15px 15px 15px;
-}
-.sitios-turismo div p{
-    margin: 20px;
-}
-.sitios-turismo div img{
-    margin: 40px;
-}
-.contenido{
-    padding-bottom: 50px;
-    margin: 20px;
-}
-.contenido h2{
-    padding-bottom: 6px;
-} */
 .main-turismo{
     display: flex;
     justify-content: center;
