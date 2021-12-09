@@ -66,8 +66,8 @@ ul, ol {
     display:block;
 }
 
-.navegacion li a:hover {
-    /* background-color:#434343; */
+.navegacion li a:hover{
+    color: orange;
 }
 
 .navegacion li ul {
@@ -597,14 +597,12 @@ section ol li{
 
 .akbar, .ram, .chini, .itimad, .rojo, .tajma{
     box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
     color: blue;
     text-align: center;
     margin: 20px;
 }
 
-.main-turismo{
+/* .main-turismo{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -631,13 +629,70 @@ section ol li{
     margin: 40px;
 }
 .contenido{
-    /* padding-bottom: 50px; */
+    padding-bottom: 50px;
     margin: 20px;
 }
 .contenido h2{
     padding-bottom: 6px;
+} */
+.main-turismo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
+.main-turismo p{
+    text-align: center;
+}
+.encuadro, .chico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.encuadro div, .chico div{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column ;
+    width: 580px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+.encuadro div{
+    height: 1100px;
+}
+.chico div{
+    height: 790px;
+}
+.encuadro div p, .chico div p{
+    margin: 20px;
+}
+.taj-mahal iframe{
+    margin-top: 30px;
+}
+.fuerte-rojo iframe{
+    margin-top: 147px;
+}
+.chini iframe{
+    margin-top: 50px;
+}
+.turismo-contactanos{
+    background-color: grey;
+    margin-top: 50px;
+    height: 100px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.turismo-contactanos p:first-child{
+    font-size: 25px;
+}
+.turismo-contactanos p{
+    font-size: 20px;
+}
 
 /* FOOTER -----------------------------------------------------------------------------------------------------------------*/
 footer{
