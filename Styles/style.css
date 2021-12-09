@@ -15,7 +15,7 @@ body{
 }
 
 /*--Header--------------------------------------------------------------------------------------------------------*/
-.header-index, .header-turismo,.header-info,.header-contacto{
+.header-index, .header-turismo, .header-info{
     width: 1425px;
     height: 450px;
     background-image: url(../imagenes/portada-home.jpg);
@@ -29,6 +29,21 @@ body{
     flex-direction: column;
     margin-bottom: 50px;
 }
+.header-contacto{
+    width: 1425px;
+    height: 450px;
+    background-image: url(../imagenes/portada-contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-attachment: scroll;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
 /* .header-index p{
     text-align: center;
 } */
@@ -70,6 +85,30 @@ body{
 .navegacion ul li a:hover{
     color: coral;
 }
+#lista{
+	position: relative;
+	display: inline-block;
+}
+.dropdown{
+	position: relative;
+	display: none;
+}
+.dropdown li{
+	margin: 0px;
+	position: absolute;
+    flex-direction: column;
+}
+.dropdown li a{
+	color: black;
+}
+.dropdown li a:hover{
+	color: red;
+    flex-direction: column;
+}
+ul #lista:hover .dropdown{
+	display: block;
+}
+
 /*---Titulo-----------------------------------------------------------------------------------------------------------*/
 .header-index p{
     position: relative;
@@ -102,7 +141,6 @@ h2{
     padding-bottom: 10px;
     margin: 30px;
     text-align: center;
-    width: 1300px;
 }
 
 h3{
@@ -189,7 +227,7 @@ p{
 .arte{
     background-image: url("../imagenes/arte-cultura.jpg");
     background-repeat: no-repeat;
-    width: 1400px;
+    width: 1425px;
     height: 300px;
     margin: 30px;
 }
@@ -200,7 +238,7 @@ p{
 }
 .parque-nacional{
     background-image: url("../imagenes/parques.jpg");
-    width: 1400px;
+    width: 1425px;
     height: 300px;
     margin: 30px;
     background-repeat: no-repeat;
@@ -213,7 +251,7 @@ p{
 .aire-libre{
     background-image: url("../imagenes/airelibre.jpg");
     background-repeat: no-repeat;
-    width: 1400px;
+    width: 1425px;
     height: 300px;
     margin: 30px;
 }
@@ -527,34 +565,53 @@ section ol li{
 
 /* INFO ----------AGREGAR LOS DIV CENTRADO------------------------------------------------------------------------*/
 /* HEADER-INFO */
-#lista{
-	position: relative;
-	display: inline-block;
+
+.main-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
 }
-.dropdown{
-	position: relative;
-	display: none;
-}
-.dropdown li{
-	margin: 0px;
-	position: absolute;
+
+.eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
+    margin: 0px;
 }
-.dropdown li a{
-	color: black;
+.main-info h2{
+    margin: 0px;
+    padding: 0px;
+    color: grey;
 }
-.dropdown li a:hover{
-	color: red;
-    flex-direction: row;
+
+.eventos div{ 
+    height: 500px;
+    width: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
 }
-ul #lista:hover .dropdown{
-	display: block;
-}
-#bateshwar, #FeriadeGanado, #kailash-Fair, #ram-barat,
-#taj-mahotsav, #fatehpur-sikri{
-    color: blue;
-    text-align: center;
+.eventos div p{
     margin: 20px;
+}
+.eventos div ul li{
+    color:  rgb(160, 156, 156);
+
+}
+
+.contenido{
+    /* padding-bottom: 50px; */
+    margin: 20px;
+}
+.contenido h2{
+    padding-bottom: 6px;
 }
 /* TURISMO ----------------------------------------------------------------------------------*/
 /* .header-turismo h1{
@@ -562,28 +619,32 @@ ul #lista:hover .dropdown{
     left: 1100px;
     color: white;
 } */
+
+.akbar, .ram, .chini, .itimad, .rojo, .tajma{
+    box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
+    color: blue;
+    text-align: center;
+    margin: 20px;
+}
+
 .main-turismo{
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
     width: 100%;
     margin: 0px;
 }
 .sitios-turismo{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
     width: 500px;
 }
 .sitios-turismo div{ 
-    height: 500px;
-    width: 700px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 15px 15px 15px 15px;
 }
 .sitios-turismo div p{
@@ -591,11 +652,6 @@ ul #lista:hover .dropdown{
 }
 .sitios-turismo div img{
     margin: 40px;
-}
-.iglesia-akbar, .ram-bagh, .chini-ka, .itimad-daulah, .fuerte-rojo, .taj-mahal{
-    box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
 }
 .contenido{
     /* padding-bottom: 50px; */
