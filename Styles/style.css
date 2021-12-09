@@ -583,7 +583,6 @@ section ol li{
 }
 .eventos div ul li{
     color:  rgb(160, 156, 156);
-
 }
 
 .contenido{
@@ -597,14 +596,12 @@ section ol li{
 
 .akbar, .ram, .chini, .itimad, .rojo, .tajma{
     box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    -moz-box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
     color: blue;
     text-align: center;
     margin: 20px;
 }
 
-.main-turismo{
+/* .main-turismo{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -631,12 +628,12 @@ section ol li{
     margin: 40px;
 }
 .contenido{
-    /* padding-bottom: 50px; */
+    padding-bottom: 50px;
     margin: 20px;
 }
 .contenido h2{
     padding-bottom: 6px;
-}
+} */
 
 
 /* FOOTER -----------------------------------------------------------------------------------------------------------------*/
