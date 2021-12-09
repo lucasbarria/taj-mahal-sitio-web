@@ -43,70 +43,50 @@ body{
     flex-direction: column;
     margin-bottom: 50px;
 }
-
-/* .header-index p{
-    text-align: center;
-} */
-.navegacion{
-    width: 1425px;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-    margin-left: 200px;
-}
-.navegacion ul{
-    display: flex;
-    justify-content: flex-start;
-    align-items: left;
-    flex-direction: row;
-    margin-top: 15px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.navegacion ul li{
-    padding-right: 20px;
-    list-style: none;
-    position: relative;
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-.navegacion ul li a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-weight: 400;
-    font-size: 17px;
-    padding: 10px;
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 1px;
+.navegacion a{
+    font-size: 20px;
 }
 .navegacion ul li a:hover{
     color: coral;
 }
-#lista{
-	position: relative;
-	display: inline-block;
+/* Prueba */
+ul, ol {
+    list-style:none;
 }
-.dropdown{
-	position: relative;
-	display: none;
+
+.navegacion > li {
+    float:left;
 }
-.dropdown li{
-	margin: 0px;
-	position: absolute;
-    flex-direction: column;
+
+.navegacion li a {
+    /* background-color:#000; */
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
 }
-.dropdown li a{
-	color: black;
+
+.navegacion li a:hover {
+    /* background-color:#434343; */
 }
-.dropdown li a:hover{
-	color: red;
-    flex-direction: column;
+
+.navegacion li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
 }
-ul #lista:hover .dropdown{
-	display: block;
+
+.navegacion li:hover > ul {
+    display:block;
+    background-color: rgb(175, 175, 175);
+}
+
+.navegacion li ul li {
+    position:relative;
+}
+
+.navegacion li ul li ul {
+    right:-140px;
 }
 
 /*---Titulo-----------------------------------------------------------------------------------------------------------*/
@@ -614,11 +594,6 @@ section ol li{
     padding-bottom: 6px;
 }
 /* TURISMO ----------------------------------------------------------------------------------*/
-/* .header-turismo h1{
-    position: relative;
-    left: 1100px;
-    color: white;
-} */
 
 .akbar, .ram, .chini, .itimad, .rojo, .tajma{
     box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
