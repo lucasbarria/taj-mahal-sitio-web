@@ -180,6 +180,8 @@ p{
     border-bottom-right-radius: 100px;
     border-top-right-radius: 10px;
     margin: 0px 20px 10px 0px;
+    width: 400px;
+    height: 300px;
 }
 .opciones{
     display: flex;
@@ -651,24 +653,18 @@ section ol li{
     margin: 0px 30px 10px 30px;
 }
 
-#tajmahal iframe, img{
+.tajmahal iframe, img{
     width: 560px;
-    height: 316px;
+    height: 315px;
     border-radius: 10px;
     margin: 10px 20px 10px 20px;
 }
 #rojo iframe, img{
-    width: 560px;
-    height: 316px;
     margin-top: 147px;
-    border-radius: 10px;
     margin: 10px 20px 10px 100px;
 }
 #chini iframe, img{
-    width: 560px;
-    height: 316px;
     margin-top: 50px;
-    border-radius: 10px;
     margin: 10px 20px 10px 100px;
 }
 
