@@ -117,7 +117,7 @@ h3{
 }
 h2{
     font-size: 25px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 h3{
@@ -314,6 +314,14 @@ p{
 .ubicacion p:first-child{
     padding-right: 362px;
 }
+.row .negrita{
+    font-weight: 900;
+}
+.div-comentarios .derecha{
+    font-weight: 900;
+    margin-top: 30px;
+    margin-left: 700px;
+}
 
 .div-comentarios{
     display: flex;
@@ -458,10 +466,11 @@ p{
     font-family: 'Montserrat', sans-serif;
     padding-right: 20px;
     padding-bottom: 10px;
-
 }
-.form .info h2{
+.form .info span{
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /*--Seccion de checkbox*/
@@ -472,14 +481,17 @@ p{
     margin-bottom: 0;
 }
 .info .uno{
-    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     text-align: center;
 }
 .info .dos{
-    padding-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     text-align: center;
 }
 .info .tres{
+    margin-top: 20px;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -495,8 +507,9 @@ p{
     padding: 0 5px 0 0;
 }
 .contenedorfecha,
-.contenedorhorario h2{
+.contenedorhorario span{
     text-align: center;
+    padding-bottom: 40px;
 }
 .contenedorfecha{
     padding-bottom: 20px;
@@ -536,9 +549,10 @@ section ol{
     padding: 0 15px 40px 35px;
     list-style-type: decimal;
 }
-section h3{
+section h2{
     text-align: left;
     margin-left: 35px;
+    margin-top: 0px;
 }
 
 section ol li{
@@ -546,13 +560,14 @@ section ol li{
     font-size: 12px ;
     font-weight: 400;
     color: black;
+    margin-top: 0px;
 }
 .mapa{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 30px;
+    padding: 5px;
 }
 
 /* INFO ------------------------------------------------------------------------------------------------------------------------*/
