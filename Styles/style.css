@@ -41,7 +41,6 @@ body{
     align-items: flex-start;
     background-attachment: scroll;
     flex-direction: column;
-    margin-bottom: 50px;
 }
 .navegacion a{
     font-size: 20px;
@@ -51,19 +50,19 @@ body{
 }
 /* Prueba */
 ul, ol {
-    list-style:none;
+    list-style: none;
 }
 
 .navegacion > li {
-    float:left;
+    float: left;
 }
 
 .navegacion li a {
     /* background-color:#000; */
-    color:#fff;
-    text-decoration:none;
-    padding:10px 12px;
-    display:block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
 }
 
 .navegacion li a:hover{
@@ -71,18 +70,18 @@ ul, ol {
 }
 
 .navegacion li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
+    display: none;
+    position: absolute;
+    min-width: 140px;
 }
 
 .navegacion li:hover > ul {
-    display:block;
-    background-color: rgb(175, 175, 175);
+    display: block;
+    background-color: rgb(167, 161, 161);
 }
 
 .navegacion li ul li {
-    position:relative;
+    position: relative;
 }
 
 .navegacion li ul li ul {
@@ -106,7 +105,7 @@ ul, ol {
     width: 0px;
     color: white;
 }
-h1,
+ h1,
 h2,
 h3{
     font-family: 'Montserrat', sans-serif;
@@ -117,15 +116,12 @@ h3{
     text-align: center;
 }
 h2{
-    font-size: 20px;
-    padding-bottom: 10px;
-    margin: 30px;
-    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
 }
 
 h3{
     font-size: 18px;
-    padding-bottom: 10px;
 }
 
 p{
@@ -140,7 +136,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 10px;
     width: 1300px;
 }
@@ -190,7 +186,6 @@ p{
     flex-direction: column;
 }
 .opciones h2{
-    font-size: 30px;
     margin-top: 20px;
 }
 .opciones h3, .opciones p{
@@ -209,7 +204,8 @@ p{
     background-repeat: no-repeat;
     width: 1425px;
     height: 300px;
-    margin: 30px;
+    margin: 10px;
+    border-radius: 10px;
 }
 .arte p, .arte h3{
     display: flex;
@@ -220,8 +216,9 @@ p{
     background-image: url("../imagenes/parques.jpg");
     width: 1425px;
     height: 300px;
-    margin: 30px;
+    margin: 10px;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 .parque-nacional p, .parque-nacional h3{
     display: flex;
@@ -233,7 +230,8 @@ p{
     background-repeat: no-repeat;
     width: 1425px;
     height: 300px;
-    margin: 30px;
+    margin: 10px;
+    border-radius: 10px;
 }
 .aire-libre h3{
     text-align: left;
@@ -242,9 +240,10 @@ p{
     width: 1425px;
     display: flex;
     flex-direction: column;
-    margin: 5px;
     background-color: rgb(189, 189, 189);
-    padding: 30px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
 }
 .opiniones h2{
     display: flex;
@@ -291,9 +290,10 @@ p{
     width: 100%;
 }
 .servicios p, .personal p, .precio p, .ubicacion p{
-    padding: 5px 0 5px;
+    padding: 5px 0px 5px;
     font-size: 15px;
     text-align: start;
+    margin-right: -10px;
 }
 /* .servicios p:first-child, .personal p:first-child, .ubicacion p:first-child{
     padding-right: 360px;
@@ -524,8 +524,14 @@ input[value="Reservar"]:hover{
     background-color: black;
 }
 section ol{
-    padding: 0 15px 40px 15px;
+    padding: 0 15px 40px 35px;
+    list-style-type: decimal;
 }
+section h3{
+    text-align: left;
+    margin-left: 35px;
+}
+
 section ol li{
     font-family: 'Montserrat', sans-serif;
     font-size: 12px ;
@@ -537,10 +543,9 @@ section ol li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 40px;
 }
 .mapa iframe{
-    margin: 15px;
+    margin-bottom: 30px;
 }
 
 /* INFO ----------AGREGAR LOS DIV CENTRADO------------------------------------------------------------------------*/
@@ -562,13 +567,16 @@ section ol li{
     flex-direction: row;
     margin: 0px;
 }
-.main-info h2{
+
+.main-info h2, .main-turismo h2{
     margin: 5px;
     padding: 0px;
     color: grey;
     width: 60%;
+    text-align: center;
 }
-.eventos h3{
+ 
+ .eventos h3, .sitios-turismo h3{
     margin-top: 20px;
     color: rgba(9, 9, 156, 0.836);
 }
@@ -599,60 +607,59 @@ section ol li{
 
 /* TURISMO ----------------------------------------------------------------------------------*/
 
-.akbar, .ram, .chini, .itimad, .rojo, .tajma{
-    box-shadow: 2px 10px 26px -5px rgba(0,0,0,0.6);
-    color: blue;
-    text-align: center;
-    margin: 20px;
-    border-radius: 10PX;
-}
 .main-turismo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.encuadro [div]{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.main-turismo p{
-    text-align: center;
-}
-.encuadro, .chico{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.encuadro div, .chico div{
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column ;
-    width: 580px;
+    width: 90%;
+    height: 700px;
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    border-radius: black solid;
 }
-.encuadro div{
-    height: 1100px;
+
+.main-turismo p{
+    text-align: start;
+    width: 70%;
+    margin: 10px 60px 10px 160px;
 }
-.chico div{
-    height: 790px;
+
+#tajmahal iframe, img{
+    width: 560px;
+    height: 316px;
+    border-radius: 10px;
+    margin: 10px 20px 10px 100px;
 }
-.encuadro div p, .chico div p{
-    margin: 20px;
-}
-.taj-mahal iframe{
-    margin-top: 30px;
-}
-.fuerte-rojo iframe{
+#rojo iframe, img{
+    width: 560px;
+    height: 316px;
     margin-top: 147px;
+    border-radius: 10px;
+    margin: 10px 20px 10px 100px;
 }
-.chini iframe{
+#chini iframe, img{
+    width: 560px;
+    height: 316px;
     margin-top: 50px;
+    border-radius: 10px;
+    margin: 10px 20px 10px 100px;
 }
+.encuadro div img{
+    align-items: center;
+}
+
+
 .turismo-contactanos{
-    background-color: grey;
+    background-color: rgb(122, 122, 124);
     margin-top: 50px;
     height: 100px;
-    width: 700px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
