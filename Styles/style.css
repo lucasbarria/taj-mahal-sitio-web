@@ -11,12 +11,12 @@ body{
     flex-direction: column;
 }
 .contenido{
-    width: 1425px;
+    width: 1366px;
 }
 
 /*--Header--------------------------------------------------------------------------------------------------------*/
 .header-index, .header-turismo, .header-info{
-    width: 1425px;
+    width: 1366px;
     height: 450px;
     background-image: url(../imagenes/portada-home.jpg);
     background-repeat: no-repeat;
@@ -29,8 +29,8 @@ body{
     flex-direction: column;
     margin-bottom: 50px;
 }
-.header-contacto{
-    width: 1425px;
+.header-contacto, .header-gracias{
+    width: 1366px;
     height: 450px;
     background-image: url(../imagenes/portada-contacto.jpg);
     background-repeat: no-repeat;
@@ -115,10 +115,10 @@ h3{
     padding-bottom: 20px;
     text-align: center;
 } */
-/* h2{
+h2{
     font-size: 25px;
     margin-top: 50px;
-} */
+}
 
 h3{
     font-size: 18px;
@@ -157,7 +157,7 @@ p{
     align-items: center;
     flex-direction: column;
     background-color: #ececec;
-    width: 1425px;
+    width: 1366px;
     border-radius: 100px;
     padding: 30px;
 }
@@ -206,7 +206,7 @@ p{
 .arte{
     background-image: url("../imagenes/arte-cultura.jpg");
     background-repeat: no-repeat;
-    width: 1425px;
+    width: 1366px;
     height: 300px;
     margin: 10px;
     border-radius: 10px;
@@ -218,7 +218,7 @@ p{
 }
 .parque-nacional{
     background-image: url("../imagenes/parques.jpg");
-    width: 1425px;
+    width: 1366px;
     height: 300px;
     margin: 10px;
     background-repeat: no-repeat;
@@ -232,7 +232,7 @@ p{
 .aire-libre{
     background-image: url("../imagenes/airelibre.jpg");
     background-repeat: no-repeat;
-    width: 1425px;
+    width: 1366px;
     height: 300px;
     margin: 10px;
     border-radius: 10px;
@@ -241,7 +241,7 @@ p{
     text-align: left;
 }
 .opiniones{
-    width: 1425px;
+    width: 1366px;
     display: flex;
     flex-direction: column;
     background-color: #ececec;
@@ -256,8 +256,8 @@ p{
 }
 .puntuaciones{
     border-right: 2px solid black;
-    width: 450px;
-    height: 225px;
+    width: 400px;
+    height: 248px;
 }
 .row{
     display: flex;
@@ -302,7 +302,7 @@ p{
     padding: 5px 0px 5px;
     font-size: 15px;
     text-align: start;
-    margin-right: -10px;
+    margin-right: -60px;
 }
 /* .servicios p:first-child, .personal p:first-child, .ubicacion p:first-child{
     padding-right: 360px;
@@ -429,7 +429,7 @@ p{
     flex-direction: column;
     margin-top: 30px;
 }
-.main-contacto h1 {
+.main-contacto h1, .gracias h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 700;
@@ -451,12 +451,14 @@ p{
     border-radius: 20px;
 }
 .div-contenido{
-    width: 400px;
+    background-image: url(../imagenes/amanecer.jpg); 
+    width: 320px;
+    height: 270px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    margin-top: 10px;
+    margin-right: 300px;
 }
 .div-contenido h2{
     font-size: 25px;
@@ -678,6 +680,7 @@ section ol li{
  
 .eventos h3, .sitios-turismo h3{
     margin-top: 10px;
+    margin-bottom: 20px;
     color: rgba(9, 9, 156, 0.836);
     font-size: 25px;
 }
@@ -802,6 +805,18 @@ section ol li{
     font-size: 20px;
 }
 
+/* GRACIAS ----------------------------------------------------------------------------------------------------------------------*/
+.gracias h1{
+    margin: 30px 0 10px -460px;
+}
+.gracias p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    margin-right: 0px;
+}
+
 /* FOOTER -----------------------------------------------------------------------------------------------------------------------*/
 footer{
     background-color: black;
@@ -822,3 +837,5 @@ footer div ul li{
     list-style: none;
     padding-left: 10px;
 }
+
+/* MOBILE ------------------------------------------------------------------------------------------------------------------------*/
