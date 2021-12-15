@@ -87,9 +87,9 @@ ul, ol {
 .navegacion li ul li ul {
     right:-140px;
 }
-#menu, #cerrar{
+/* #menu, #cerrar{
     display: none;
-}
+} */
 
 /*---Titulo-----------------------------------------------------------------------------------------------------------------------*/
 .header-index p{
@@ -134,6 +134,12 @@ p{
     color: black;
 }
 /* MAIN-INDEX---------------------------------------------------------------------------------------------------------------------*/
+.main-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .viaje{
     display: flex;
     justify-content: center;
@@ -141,12 +147,12 @@ p{
     flex-direction: row;
     margin-bottom: 50px;
     padding: 10px;
-    width: 1300px;
+    width: 780px;
 }
 .texto-azul{
     color: blue;
     font-size: 30px;
-    padding-left: 200px;
+    /* padding-left: 200px; */
 }
 .viaje div{
     margin-left: 20px;
@@ -262,7 +268,7 @@ p{
     width: 400px;
     height: 248px;
 }
-.row{
+.div-row, .row{
     display: flex;
     justify-content: center;
     align-items: center;

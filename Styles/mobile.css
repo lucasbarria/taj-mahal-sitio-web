@@ -1,7 +1,74 @@
 .contenido{
     width: 480px;
 }
-.header-index, .header-turismo, .header-info, .header-contacto, .header-gracias{
+#menu{
+    background-image: url(../imagenes/menu.jpg);
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    font-size: 0px;
+    /* border: solid 2px black; */
+    margin-top: 0px;
+    margin-left: 0px;
+}   
+.viaje{
+    width: 480px;
+}
+.viaje div p{
+    font-size: 14px;
+}
+.texto-azul{
+    font-size: 20px;
+}
+
+.visitarIndia{
+    width: 480px;
+    border-radius: 20px;
+}
+.visitarIndia h2{
+    margin-top: 5px;
+}
+.visitarIndia div{
+    width: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.visitarIndia div:nth-last-child(3), .visitarIndia div:nth-last-child(2){
+    border-bottom: 1px solid black;
+
+}
+.visitarIndia div p{
+    font-size: 14px;
+}
+
+.opciones{
+    width: 480px;
+}
+.arte, .parque-nacional, .aire-libre{
+    width: 480px;
+    height: 200px;
+}
+
+.opiniones{
+    width: 480px;
+    flex-direction: column;
+}
+.div-row{
+    width: 480px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.row{
+    flex-direction: row;
+}
+.puntuaciones{
+    border-right: none;
+    margin-right: 30px;
+}
+
+/* .header-index, .header-turismo, .header-info, .header-contacto, .header-gracias{
     display: none;
     background-image: none;
 }
@@ -32,4 +99,4 @@
     width: 36px;
     height: 36px;
     font-size: 0px;
-}
+} */
