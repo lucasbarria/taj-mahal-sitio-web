@@ -1,0 +1,35 @@
+.contenido{
+    width: 480px;
+}
+.header-index, .header-turismo, .header-info, .header-contacto, .header-gracias{
+    display: none;
+    background-image: none;
+}
+.navegacion:target{
+    display: block;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 200px;
+}
+.navegacion ul li{
+    border: solid 2px black;
+    padding: 10px;
+    margin: 10px;
+}
+#menu{
+    background-image: url(../imagenes/menu.jpg);
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    font-size: 0px;
+    border: solid 2px black;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+#cerrar{
+    display: block;
+    background-image: url;
+    width: 36px;
+    height: 36px;
+    font-size: 0px;
+}
