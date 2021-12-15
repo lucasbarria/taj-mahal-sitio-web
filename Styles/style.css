@@ -268,7 +268,7 @@ p{
     width: 400px;
     height: 248px;
 }
-.div-row, .row{
+.div-row, .row, .row-comentarios{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,10 +342,10 @@ p{
 .div-comentarios strong{
     margin: 15px 0px 15px 650px;
 }
-.div-comentarios .margen{
+/* .div-comentarios .margen{
     font-weight: 800;
     margin: 20px 0 0 600px;
-}
+} */
 .comentarios{
     display: flex;
     flex-direction: row;
@@ -376,6 +376,10 @@ p{
     margin-left: 0px;
 }
 .ordenarPor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     margin-bottom: 40px;
 }
 .ordenarPor select{
@@ -782,17 +786,17 @@ section ol li{
     margin: 0px 30px 10px 30px;
 }
 
-.tajmahal iframe, img{
+.tajmahal iframe, .tajmahal img{
     width: 560px;
     height: 315px;
     border-radius: 10px;
     margin: 10px 20px 10px 20px;
 }
-#rojo iframe, img{
+#rojo iframe, #rojo img{
     margin-top: 147px;
     margin: 10px 20px 10px 100px;
 }
-#chini iframe, img{
+#alineado iframe, #alineado img{
     margin-top: 50px;
     margin: 10px 20px 10px 100px;
 }
