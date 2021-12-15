@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
     <link href="https://fonts.google.com/specimen/Montserrat" rel="stylesheet">
-    <title>Reserva Tour India</title>
+    <title>Reservá tu Tour</title>
 </head>
     <body>
         <header class="header-contacto">
@@ -25,61 +25,81 @@
 
         <div class="contenido">  
             <main class="main-contacto">
-                <h1 id= "main-titulo">Reservá tu Tour</h1>
-                <form action="http://recursos.grodriguez.com.ar/FORM/" method="post" enctype="multipart/form-data">
+                <div>
+                    <h1 id= "main-titulo">Tours mas visitados</h1>
+                    <div class="tarjetas-contacto">
+                        <div class="div-contenido">
+                            <h2>Taj mahal</h2>
+                            <p>Agra, Uttar Pradesh 282001, India</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cupiditate, odit fugit aspernatur quasi voluptatum voluptatem? Iure, minus laudantium. Sit tempore qui dolore dicta ea cum rerum! At, sapiente amet!</p>                          
+                        </div>
+                        <div class="div-gris">
+                            <p>$30.000</p>
+                            <a href="#form">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form id="form" action="http://recursos.grodriguez.com.ar/FORM/" method="post" enctype="multipart/form-data">
                 <div class="form">
                     <div class="nombre">
-                        <span>Nombre:*</span>
-                        <input type="text" name="nombre" placeholder="Ingrese su nombre" required/>
+                        <label for="nombre">Nombre:*</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required/>
                     </div>
 
                     <div class="num">
-                        <span>Ingrese su Teléfono:*</span>
-                        <input type="tel" name="telefono" placeholder="Ej: 011-566-1111" required/>
+                        <label for="tel">Ingrese su Teléfono:*</label>
+                        <input type="tel" name="telefono" id="tel" placeholder="Ej: 011-566-1111" required/>
                     </div>
 
                     <div class="correo">
-                        <span>Ingrese su email:*</span>
-                        <input type="email" name="email" placeholder="anonimo@gmail.com" />
+                        <label for="email">Ingrese su email:*</label>
+                        <input type="email" name="email" id="email" placeholder="anonimo@gmail.com"/>
                 
                     </div>
                     <div class="info">
-                        <span>Elija que excursión desea realizar*</span> <!-- quiero que sea negrita -->
+                        <h2>Elija que excursión desea realizar*</h2>
                         <div class="uno">
-                            <span>Fatehpur Sikri</span>
-                            <input type="checkbox" name="excursiones" id="fate" />
-                            <span>Taj Mahal</span>
-                            <input type="checkbox" name="excursiones" id="taj" />
-                            <span>Mathura</span>
-                            <input type="checkbox" name="excursiones" id="mat" />
+                            <label for="fatehpur-sikri">Fatehpur Sikri</label>
+                            <input type="checkbox" name="fatehpur-sikri" id="fatehpur-sikri"/>
+
+                            <label for="taj-mahal">Taj Mahal</label>
+                            <input type="checkbox" name="taj-mahal" id="taj-mahal"/>
+
+                            <label for="mathura">Mathura</label>
+                            <input type="checkbox" name="mathura" id="mathura"/>
                         </div>
                         <div class="dos">
-                            <span>Bateshwar</span>
-                            <input type="checkbox" name="excursiones" id="bat" />
-                            <span>Santuario de Chambal</span>
-                            <input type="checkbox" name="excursiones" id="cham" />
-                            <span>Santuario de aves de Keetham</span>
-                            <input type="checkbox" name="excursiones" id="aves" />
+                            <label for="bateshwar">Bateshwar</label>
+                            <input type="checkbox" name="bateshwar" id="bateshwar"/>
+
+                            <label for="santuario-de-chambal">Santuario de Chambal</label>
+                            <input type="checkbox" name="santuario-de-chambal" id="santuario-de-chambal"/>
+
+                            <label for="santuario-de-aves-de-keetham">Santuario de aves de Keetham</label>
+                            <input type="checkbox" name="santuario-de-aves-de-keetham" id="santuario-de-aves-de-keetham"/>
                         </div>
                     </div>
 
                     <div class="info">
-                        <span>¿Desea que la excursión sea guiada?</span> <!-- quiero que sea negrita -->
+                        <h2>¿Desea que la excursión sea guiada?</h2>
                         <div class="tres">
-                            <span>Sí</span>
-                            <input type="radio" name="guiada" id="guia-si">
-                            <span>No</span>
-                            <input type="radio" name="guiada" id="guia-no">
+                            <label for="guia-si">Sí</label>
+                            <input type="radio" name="guiada" id="guia-si"/>
+
+                            <label for="guia-no">No</label>
+                            <input type="radio" name="guiada" id="guia-no"/>
                         </div>
                     </div>
 
                     <div class="contenedorfecha">
-                        <span>Ingrese el día*</span>
-                        <input type="date" name="fecha" min="2021-12-10" max="2023-11-30" id="date" required/>
+                        <label for="fecha">Ingrese el día*</label>
+                        <input type="date" name="fecha" min="2021-12-10" max="2023-11-30" id="fecha" required/>
                     </div>
 
                     <div class="contenedorhorario">
-                            <span>Elija un horario*</span>
+                        <h2>Elija un horario*</h2>
                         <select name="hora" id="hora">
                             <option value="10hs">10:00</option>
                             <option value="12hs">12:00</option>
@@ -90,16 +110,16 @@
                     </div>
                     
                     <div class="contenedorpersonas">
-                        <span>Ingrese la cantidad de personas*</span>
-                    <input type="number" name="personas" id="cantpersonas" min="1" max="10" placeholder="numero de personas" required/>
+                        <label for="cantpersonas">Ingrese la cantidad de personas*</label>
+                        <input type="number" name="personas" id="cantpersonas" min="1" max="10" placeholder="numero de personas" required/>
                     </div>
 
-                    <input type="submit" value="Reservar" id="reservo" />
+                    <input type="submit" value="Reservar" id="reservo"/>
                 </div>
                 </form>
 
                 <section>
-                    <h2>Nota a Tener en cuenta:</h2>
+                    <h3>Nota a Tener en cuenta:</h3>
                     <ol>
                         <li>Taj Mahal cierra todos los viernes.</li>
                         <li>Se recomienda a los turistas que permanezcan dentro del monumento según las instrucciones mencionadas en los boletos o emitidas por las autoridades de ASI.</li>
@@ -108,8 +128,8 @@
                     </ol>
                 </section>
 
-                <h2 class="mapa">Donde nos podes encontrar y llamar para reservar:</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10186.51822802736!2d78.03874244895978!3d27.161184535144624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39743fd96899c287%3A0xcaf0de5d150bed06!2sTravel%20Bureau!5e0!3m2!1ses!2sar!4v1637258938357!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3>Donde nos podes encontrar y llamar para reservar:</h3>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10186.51822802736!2d78.03874244895978!3d27.161184535144624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39743fd96899c287%3A0xcaf0de5d150bed06!2sTravel%20Bureau!5e0!3m2!1ses!2sar!4v1637258938357!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </main>
         </div>
 
