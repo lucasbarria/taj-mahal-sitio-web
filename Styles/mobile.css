@@ -1,25 +1,49 @@
 .contenido{
-    width: 480px;
+    max-width: 480px;
 }
-.header-index p, .header-index h1{
+
+header p, header h1{
     display: none;
 }
-.header-index{
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 200px;
-    width: 480px;
+.navegacion li a{
+    display: none;
 }
-#menu{
-    background-image: url(../imagenes/menu.jpg);
-    background-position: left;
-    background-position-y: top;
+
+.navegacion{
+    display: none;
+}
+.header-index:target{
+    display: block;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header-index li{
+    padding: 10px;
+    margin: 5px;
+}
+
+.header-index, .header-turismo, .header-info{
+    background-image: url(../imagenes/menu.jpg); /*--------PONER BACKGROUND DE FONDO-----*/
+    width: 36px;
+    height: 36px;
     display: inline-block;
     font-size: 0px;
     border: solid 2px black;
     margin-top: 0px;
     margin-left: 0px;
-}   
+}  
+.header-contacto, .header-gracias{
+    background-image: url(../imagenes/menu.jpg); /*--------PONER BACKGROUND DE FONDO-----*/
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    font-size: 0px;
+    /* border: solid 2px black; */
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
 .viaje{
     width: 480px;
 }
@@ -53,15 +77,16 @@
 }
 
 .opciones{
-    width: 480px;
+    max-width: 480px;
 }
 .arte, .parque-nacional, .aire-libre{
-    width: 480px;
+    max-width: 480px;
     height: 200px;
 }
 
 .opiniones{
-    width: 480px;
+    max-width: 480px;
+    height: 670px;
     flex-direction: column;
 }
 .div-row{
@@ -79,6 +104,11 @@
 
 .div-comentarios{
     width: 100%;
+    margin: -150px ;
+}
+p .margen{
+    margin: 15px 0px 15px 650px;
+    font-weight: 700px;
 }
 .row-comentarios{
     width: 100%;
@@ -86,6 +116,9 @@
 }
 .ordenarPor p{
     font-size: 15px;
+}
+.servicios, .precio, .ubicacion, .personal{
+    display: none;
 }
 #escribir-opinion{
     margin-left: 40px;
