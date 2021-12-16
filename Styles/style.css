@@ -14,6 +14,14 @@ body{
     width: 1366px;
 }
 
+/*
+#menu{
+    display: none;
+}
+#cerrar{
+    display: none;
+}*/
+
 /*--Header--------------------------------------------------------------------------------------------------------*/
 .header-index, .header-turismo, .header-info{
     width: 1366px;
@@ -339,10 +347,10 @@ p{
 .div-comentarios p{
     display: inline;
 }
-.div-comentarios strong{
+/*.div-comentarios strong{
     margin: 15px 0px 15px 650px;
 }
-/* .div-comentarios .margen{
+ .div-comentarios .margen{
     font-weight: 800;
     margin: 20px 0 0 600px;
 } */
