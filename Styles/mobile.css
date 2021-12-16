@@ -1,16 +1,22 @@
 .contenido{
     width: 480px;
 }
-header p, header h1{
+.header-index p, .header-index h1{
     display: none;
+}
+.header-index{
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 200px;
+    width: 480px;
 }
 #menu{
     background-image: url(../imagenes/menu.jpg);
-    width: 36px;
-    height: 36px;
+    background-position: left;
+    background-position-y: top;
     display: inline-block;
     font-size: 0px;
-    /* border: solid 2px black; */
+    border: solid 2px black;
     margin-top: 0px;
     margin-left: 0px;
 }   
